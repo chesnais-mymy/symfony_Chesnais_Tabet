@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: /Users/mimi/my_project_web/app/config/routing_dev.yml

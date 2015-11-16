@@ -1,0 +1,19 @@
+esiea_blog_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: EsieaBlogBundle:Default:index }
+
+
+esiea_blog_view:
+    path:     /hello/mimi/{id}
+    defaults: { _controller: EsieaBlogBundle:Default:view }
+
+
+esiea_blog_edit:
+    path:     /hello/edit/{id}
+    defaults: { _controller: EsieaBlogBundle:Default:edit }
+
+
+esiea_blog_delete:
+    path:     /hello/delete/{id}
+    defaults: { _controller: EsieaBlogBundle:Default:delete }
+
