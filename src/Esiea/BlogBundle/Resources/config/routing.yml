@@ -1,19 +1,24 @@
+# src/OC/PlatformBundle/Resources/config/routing.yml
+
 esiea_blog_homepage:
-    path:     /hello/{name}
+    path:     /
     defaults: { _controller: EsieaBlogBundle:Default:index }
 
+hello_the_world:
+    path:     /hello-world
+    defaults: { _controller: EsieaBlogBundle:Advert:index }
 
 esiea_blog_view:
     path:     /hello/mimi/{id}
-    defaults: { _controller: EsieaBlogBundle:Default:view }
+    defaults: { _controller: EsieaBlogBundle:Advert:view }
 
 
 esiea_blog_edit:
     path:     /hello/edit/{id}
-    defaults: { _controller: EsieaBlogBundle:Default:edit }
+    defaults: { _controller: EsieaBlogBundle:Advert:edit }
 
 
 esiea_blog_delete:
     path:     /hello/delete/{id}
-    defaults: { _controller: EsieaBlogBundle:Default:delete }
+    defaults: { _controller: EsieaBlogBundle:Advert:delete }
 
