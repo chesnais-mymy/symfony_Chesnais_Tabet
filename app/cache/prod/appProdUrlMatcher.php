@@ -37,19 +37,24 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
         }
 
         if (0 === strpos($pathinfo, '/hello')) {
+            // hello_the_world
+            if ($pathinfo === '/hello-world') {
+                return array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\AdvertController::indexAction',  '_route' => 'hello_the_world',);
+            }
+
             // esiea_blog_view
             if (0 === strpos($pathinfo, '/hello/mimi') && preg_match('#^/hello/mimi/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'esiea_blog_view')), array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\DefaultController::viewAction',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'esiea_blog_view')), array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\AdvertController::viewAction',));
             }
 
             // esiea_blog_edit
             if (0 === strpos($pathinfo, '/hello/edit') && preg_match('#^/hello/edit/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'esiea_blog_edit')), array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\DefaultController::editAction',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'esiea_blog_edit')), array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\AdvertController::editAction',));
             }
 
             // esiea_blog_delete
             if (0 === strpos($pathinfo, '/hello/delete') && preg_match('#^/hello/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'esiea_blog_delete')), array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\DefaultController::deleteAction',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'esiea_blog_delete')), array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\AdvertController::deleteAction',));
             }
 
         }

@@ -15,8 +15,13 @@ class __TwigTemplate_2507789a266050ab5aaaaa474ffea9d65920648993eebd081401d576dc4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        // line 1
-        echo "Hello!
+        // line 2
+        echo "
+<html>
+<body>
+Hello!
+</body>
+</html>
 ";
     }
 
@@ -27,8 +32,14 @@ class __TwigTemplate_2507789a266050ab5aaaaa474ffea9d65920648993eebd081401d576dc4
 
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  19 => 2,);
     }
 }
+/* {# src/OC/PlatformBundle/Resources/views/Default/index.html.twig #}*/
+/* */
+/* <html>*/
+/* <body>*/
 /* Hello!*/
+/* </body>*/
+/* </html>*/
 /* */

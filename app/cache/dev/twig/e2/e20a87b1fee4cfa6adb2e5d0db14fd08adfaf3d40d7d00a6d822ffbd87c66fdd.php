@@ -15,8 +15,8 @@ class __TwigTemplate_c958479f423938efb07a06d38c278b1cfb0d7b48b5e80457d629ce3ab46
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1f27623a5556a0dbefa9858145398b088f861409afd273e32a2c4389192e08d7 = $this->env->getExtension("native_profiler");
-        $__internal_1f27623a5556a0dbefa9858145398b088f861409afd273e32a2c4389192e08d7->enter($__internal_1f27623a5556a0dbefa9858145398b088f861409afd273e32a2c4389192e08d7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:index.html.twig"));
+        $__internal_02d54257abc77399bf6c6615d2abced15c61baabc752c181d2db4664286274cb = $this->env->getExtension("native_profiler");
+        $__internal_02d54257abc77399bf6c6615d2abced15c61baabc752c181d2db4664286274cb->enter($__internal_02d54257abc77399bf6c6615d2abced15c61baabc752c181d2db4664286274cb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:index.html.twig"));
 
         // line 2
         echo "
@@ -26,7 +26,10 @@ class __TwigTemplate_c958479f423938efb07a06d38c278b1cfb0d7b48b5e80457d629ce3ab46
     <title>Bienvenue sur ma première page avec OpenClassrooms !</title>
 </head>
 <body>
-<h1>Hello World !</h1>
+<h1>Hello World ";
+        // line 9
+        echo twig_escape_filter($this->env, (isset($context["nom"]) ? $context["nom"] : $this->getContext($context, "nom")), "html", null, true);
+        echo "!</h1>
 
 <p>
     Le Hello World est un grand classique en programmation.
@@ -37,7 +40,7 @@ class __TwigTemplate_c958479f423938efb07a06d38c278b1cfb0d7b48b5e80457d629ce3ab46
 </body>
 </html>";
         
-        $__internal_1f27623a5556a0dbefa9858145398b088f861409afd273e32a2c4389192e08d7->leave($__internal_1f27623a5556a0dbefa9858145398b088f861409afd273e32a2c4389192e08d7_prof);
+        $__internal_02d54257abc77399bf6c6615d2abced15c61baabc752c181d2db4664286274cb->leave($__internal_02d54257abc77399bf6c6615d2abced15c61baabc752c181d2db4664286274cb_prof);
 
     }
 
@@ -46,12 +49,17 @@ class __TwigTemplate_c958479f423938efb07a06d38c278b1cfb0d7b48b5e80457d629ce3ab46
         return "EsieaBlogBundle:Advert:index.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  22 => 2,);
+        return array (  31 => 9,  22 => 2,);
     }
 }
-/* {# src/OC/PlatformBundle/Resources/views/Advert/index.html.twig #}*/
+/* {# src/Esiea/BlogBundle/Resources/views/Advert/index.html.twig #}*/
 /* */
 /* <!DOCTYPE html>*/
 /* <html>*/
@@ -59,7 +67,7 @@ class __TwigTemplate_c958479f423938efb07a06d38c278b1cfb0d7b48b5e80457d629ce3ab46
 /*     <title>Bienvenue sur ma première page avec OpenClassrooms !</title>*/
 /* </head>*/
 /* <body>*/
-/* <h1>Hello World !</h1>*/
+/* <h1>Hello World {{ nom }}!</h1>*/
 /* */
 /* <p>*/
 /*     Le Hello World est un grand classique en programmation.*/

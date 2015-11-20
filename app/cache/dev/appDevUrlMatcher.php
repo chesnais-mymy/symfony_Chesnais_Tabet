@@ -127,33 +127,29 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // esiea_blog_homepage
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'esiea_blog_homepage');
-            }
-
-            return array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\DefaultController::indexAction',  '_route' => 'esiea_blog_homepage',);
-        }
-
-        if (0 === strpos($pathinfo, '/hello')) {
-            // hello_the_world
-            if ($pathinfo === '/hello-world') {
-                return array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\AdvertController::indexAction',  '_route' => 'hello_the_world',);
+        if (0 === strpos($pathinfo, '/Blog_Cuisine')) {
+            // esiea_blog_home
+            if (preg_match('#^/Blog_Cuisine(?:/(?P<page>\\d*))?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'esiea_blog_home')), array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\AdvertController::indexAction',  'page' => 1,));
             }
 
             // esiea_blog_view
-            if (0 === strpos($pathinfo, '/hello/mimi') && preg_match('#^/hello/mimi/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            if (0 === strpos($pathinfo, '/Blog_Cuisine/advert') && preg_match('#^/Blog_Cuisine/advert/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'esiea_blog_view')), array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\AdvertController::viewAction',));
             }
 
             // esiea_blog_edit
-            if (0 === strpos($pathinfo, '/hello/edit') && preg_match('#^/hello/edit/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            if (0 === strpos($pathinfo, '/Blog_Cuisine/edit') && preg_match('#^/Blog_Cuisine/edit/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'esiea_blog_edit')), array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\AdvertController::editAction',));
             }
 
+            // esiea_blog_add
+            if ($pathinfo === '/Blog_Cuisine/add') {
+                return array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\AdvertController::addAction',  '_route' => 'esiea_blog_add',);
+            }
+
             // esiea_blog_delete
-            if (0 === strpos($pathinfo, '/hello/delete') && preg_match('#^/hello/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            if (0 === strpos($pathinfo, '/Blog_Cuisine/delete') && preg_match('#^/Blog_Cuisine/delete/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'esiea_blog_delete')), array (  '_controller' => 'Esiea\\BlogBundle\\Controller\\AdvertController::deleteAction',));
             }
 

@@ -11,15 +11,6 @@ class DefaultController extends Controller
         return $this->render('EsieaBlogBundle:Default:index.html.twig');
     }
 
- public function viewAction($id)
-  {
-    return $this->render('EsieaBlogBundle:Default:view.html.twig',array('id'  => $id));
-  }
-
- public function editAction($id)
-  {
-    return $this->render('EsieaBlogBundle:Default:edit.html.twig');
-  }
 
 
 }
