@@ -29,21 +29,50 @@ class AdvertController extends Controller
 
         // Ici, on récupérera la liste des annonces, puis on la passera au template
 
+        $listAdverts = array(
+            array(
+                'title'   => 'Recherche développpeur Symfony2',
+                'id'      => 1,
+                'author'  => 'Alexandre',
+                'content' => 'Nous recherchons un développeur Symfony2 débutant sur Lyon. Blabla…',
+                'date'    => new \Datetime()),
+            array(
+                'title'   => 'Mission de webmaster',
+                'id'      => 2,
+                'author'  => 'Hugo',
+                'content' => 'Nous recherchons un webmaster capable de maintenir notre site internet. Blabla…',
+                'date'    => new \Datetime()),
+            array(
+                'title'   => 'Offre de stage webdesigner',
+                'id'      => 3,
+                'author'  => 'Mathieu',
+                'content' => 'Nous proposons un poste pour webdesigner. Blabla…',
+                'date'    => new \Datetime())
+        );
 
         // Mais pour l'instant, on ne fait qu'appeler le template
-        return $this->render('EsieaBlogBundle:Advert:index.html.twig', array('nom' => 'mimi'));
+        return $this->render('EsieaBlogBundle:Advert:index.html.twig', array(
+            'listAdverts' => $listAdverts));
 
-        # $content = $this->get('templating')->render('EsieaBlogBundle:Advert:index.html.twig', array('nom'=> 'mimi'));
-        #return new Response($content);
+
     }
+
 
     public function viewAction($id)
     {
-        //on récupére l'annonce n°id
-        $content = $this->get('templating')->render('EsieaBlogBundle:Advert:view.html.twig', array('id' => $id));
-        return new Response($content);
-    }
+        //récupération de l'annonce n°id
+        $advert = array(
+            'title'   => 'Recherche développpeur Symfony2',
+            'id'      => $id,
+            'author'  => 'Alexandre',
+            'content' => 'Nous recherchons un développeur Symfony2 débutant sur Lyon. Blabla…',
+            'date'    => new \Datetime()
+        );
 
+        return $this->render('EsieaBlogBundle:Advert:view.html.twig', array(
+            'advert' => $advert
+        ));
+    }
 
     public function addAction(Request $request)
     {
@@ -74,17 +103,64 @@ class AdvertController extends Controller
             return $this->redirectToRoute('esiea_blog_view', array('id' => 5));
         }
 
-        return $this->render('EsieaBlogBundle:Advert:edit.html.twig');
+        $advert = array(
+            'title'   => 'Recherche développpeur Symfony2',
+            'id'      => $id,
+            'author'  => 'Alexandre',
+            'content' => 'Nous recherchons un développeur Symfony2 débutant sur Lyon. Blabla…',
+            'date'    => new \Datetime()
+        );
+
+        return $this->render('EsieaBlogBundle:Advert:edit.html.twig', array(
+            'advert' => $advert
+        ));
+
 
     }
 
-    public function deleteAction($id)
+    public function deleteAction($id, Request $request)
     {
+
+        if ($request->isMethod('POST')) {
+            $request->getSession()->getFlashBag()->add('notice', 'Annonce bien supprimée.');
+
+            return $this->redirectToRoute('esiea_blog_home');
+        }
+
         // Ici, on récupérera l'annonce correspondant à $id
 
-        // Ici, on gérera la suppression de l'annonce en question
+        $advert = array(
+            'title'   => 'Recherche développpeur Symfony2',
+            'id'      => $id,
+            'author'  => 'Alexandre',
+            'content' => 'Nous recherchons un développeur Symfony2 débutant sur Lyon. Blabla…',
+            'date'    => new \Datetime()
+        );
 
-        return $this->render('EsieaBlogBundle:Advert:delete.html.twig');
+        // Ici, on gérera la suppression de l'annonce en question
+        return $this->render('EsieaBlogBundle:Advert:delete.html.twig', array(
+            'advert' => $advert
+        ));
+
+
+
+    }
+
+    public function menuAction($limit)
+    {
+        // On fixe en dur une liste ici, bien entendu par la suite
+        // on la récupérera depuis la BDD !
+        $listAdverts = array(
+            array('id' => 2, 'title' => 'Recherche développeur Symfony2'),
+            array('id' => 5, 'title' => 'Mission de webmaster'),
+            array('id' => 9, 'title' => 'Offre de stage webdesigner')
+        );
+
+        return $this->render('EsieaBlogBundle:Advert:menu.html.twig', array(
+            // Tout l'intérêt est ici : le contrôleur passe
+            // les variables nécessaires au template !
+            'listAdverts' => $listAdverts
+        ));
     }
 
 }

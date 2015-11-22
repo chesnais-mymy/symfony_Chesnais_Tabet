@@ -7,40 +7,98 @@ class __TwigTemplate_c958479f423938efb07a06d38c278b1cfb0d7b48b5e80457d629ce3ab46
     {
         parent::__construct($env);
 
-        $this->parent = false;
-
+        // line 4
+        $this->parent = $this->loadTemplate("EsieaBlogBundle::layout.html.twig", "EsieaBlogBundle:Advert:index.html.twig", 4);
         $this->blocks = array(
+            'title' => array($this, 'block_title'),
+            'esieablog_body' => array($this, 'block_esieablog_body'),
         );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "EsieaBlogBundle::layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_02d54257abc77399bf6c6615d2abced15c61baabc752c181d2db4664286274cb = $this->env->getExtension("native_profiler");
-        $__internal_02d54257abc77399bf6c6615d2abced15c61baabc752c181d2db4664286274cb->enter($__internal_02d54257abc77399bf6c6615d2abced15c61baabc752c181d2db4664286274cb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:index.html.twig"));
+        $__internal_7e7a002df3b6a6b5d2ff703050eb792c63ad495849475f9f0c81fac2829a4d0a = $this->env->getExtension("native_profiler");
+        $__internal_7e7a002df3b6a6b5d2ff703050eb792c63ad495849475f9f0c81fac2829a4d0a->enter($__internal_7e7a002df3b6a6b5d2ff703050eb792c63ad495849475f9f0c81fac2829a4d0a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:index.html.twig"));
 
-        // line 2
-        echo "
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Bienvenue sur ma première page avec OpenClassrooms !</title>
-</head>
-<body>
-<h1>Hello World ";
-        // line 9
-        echo twig_escape_filter($this->env, (isset($context["nom"]) ? $context["nom"] : $this->getContext($context, "nom")), "html", null, true);
-        echo "!</h1>
-
-<p>
-    Le Hello World est un grand classique en programmation.
-    Il signifie énormément, car cela veut dire que vous avez
-    réussi à exécuter le programme pour accomplir une tâche simple :
-    afficher ce hello world !
-</p>
-</body>
-</html>";
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_02d54257abc77399bf6c6615d2abced15c61baabc752c181d2db4664286274cb->leave($__internal_02d54257abc77399bf6c6615d2abced15c61baabc752c181d2db4664286274cb_prof);
+        $__internal_7e7a002df3b6a6b5d2ff703050eb792c63ad495849475f9f0c81fac2829a4d0a->leave($__internal_7e7a002df3b6a6b5d2ff703050eb792c63ad495849475f9f0c81fac2829a4d0a_prof);
+
+    }
+
+    // line 6
+    public function block_title($context, array $blocks = array())
+    {
+        $__internal_d2996a4741a6e87ad80770f67764b8a0f04f1694e6ebb625dfdd067dc43cfe79 = $this->env->getExtension("native_profiler");
+        $__internal_d2996a4741a6e87ad80770f67764b8a0f04f1694e6ebb625dfdd067dc43cfe79->enter($__internal_d2996a4741a6e87ad80770f67764b8a0f04f1694e6ebb625dfdd067dc43cfe79_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        echo "Accueil ";
+        $this->displayParentBlock("title", $context, $blocks);
+        echo " ";
+        
+        $__internal_d2996a4741a6e87ad80770f67764b8a0f04f1694e6ebb625dfdd067dc43cfe79->leave($__internal_d2996a4741a6e87ad80770f67764b8a0f04f1694e6ebb625dfdd067dc43cfe79_prof);
+
+    }
+
+    // line 8
+    public function block_esieablog_body($context, array $blocks = array())
+    {
+        $__internal_75f867d4f45069da77e093db8138a6ba6e13b86d3632daee2b408ac884245b84 = $this->env->getExtension("native_profiler");
+        $__internal_75f867d4f45069da77e093db8138a6ba6e13b86d3632daee2b408ac884245b84->enter($__internal_75f867d4f45069da77e093db8138a6ba6e13b86d3632daee2b408ac884245b84_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "esieablog_body"));
+
+        // line 9
+        echo "
+    <h2>Liste des annonces</h2>
+
+    <ul>
+        ";
+        // line 13
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["listAdverts"]) ? $context["listAdverts"] : $this->getContext($context, "listAdverts")));
+        $context['_iterated'] = false;
+        foreach ($context['_seq'] as $context["_key"] => $context["advert"]) {
+            // line 14
+            echo "            <li>
+                <a href=\"";
+            // line 15
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("esiea_blog_view", array("id" => $this->getAttribute($context["advert"], "id", array()))), "html", null, true);
+            echo "\">
+                    ";
+            // line 16
+            echo twig_escape_filter($this->env, $this->getAttribute($context["advert"], "title", array()), "html", null, true);
+            echo "
+                </a>
+                par ";
+            // line 18
+            echo twig_escape_filter($this->env, $this->getAttribute($context["advert"], "author", array()), "html", null, true);
+            echo ",
+                le ";
+            // line 19
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["advert"], "date", array()), "d/m/Y"), "html", null, true);
+            echo "
+            </li>
+        ";
+            $context['_iterated'] = true;
+        }
+        if (!$context['_iterated']) {
+            // line 22
+            echo "            <li>Pas (encore !) d'annonces</li>
+        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['advert'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 24
+        echo "    </ul>
+
+";
+        
+        $__internal_75f867d4f45069da77e093db8138a6ba6e13b86d3632daee2b408ac884245b84->leave($__internal_75f867d4f45069da77e093db8138a6ba6e13b86d3632daee2b408ac884245b84_prof);
 
     }
 
@@ -56,24 +114,32 @@ class __TwigTemplate_c958479f423938efb07a06d38c278b1cfb0d7b48b5e80457d629ce3ab46
 
     public function getDebugInfo()
     {
-        return array (  31 => 9,  22 => 2,);
+        return array (  97 => 24,  90 => 22,  82 => 19,  78 => 18,  73 => 16,  69 => 15,  66 => 14,  61 => 13,  55 => 9,  49 => 8,  35 => 6,  11 => 4,);
     }
 }
 /* {# src/Esiea/BlogBundle/Resources/views/Advert/index.html.twig #}*/
 /* */
-/* <!DOCTYPE html>*/
-/* <html>*/
-/* <head>*/
-/*     <title>Bienvenue sur ma première page avec OpenClassrooms !</title>*/
-/* </head>*/
-/* <body>*/
-/* <h1>Hello World {{ nom }}!</h1>*/
 /* */
-/* <p>*/
-/*     Le Hello World est un grand classique en programmation.*/
-/*     Il signifie énormément, car cela veut dire que vous avez*/
-/*     réussi à exécuter le programme pour accomplir une tâche simple :*/
-/*     afficher ce hello world !*/
-/* </p>*/
-/* </body>*/
-/* </html>*/
+/* {% extends "EsieaBlogBundle::layout.html.twig" %}*/
+/* */
+/* {% block title %}Accueil {{ parent() }} {% endblock %}*/
+/* */
+/* {% block esieablog_body %}*/
+/* */
+/*     <h2>Liste des annonces</h2>*/
+/* */
+/*     <ul>*/
+/*         {% for advert in listAdverts %}*/
+/*             <li>*/
+/*                 <a href="{{ path('esiea_blog_view', {'id': advert.id}) }}">*/
+/*                     {{ advert.title }}*/
+/*                 </a>*/
+/*                 par {{ advert.author }},*/
+/*                 le {{ advert.date|date('d/m/Y') }}*/
+/*             </li>*/
+/*         {% else %}*/
+/*             <li>Pas (encore !) d'annonces</li>*/
+/*         {% endfor %}*/
+/*     </ul>*/
+/* */
+/* {% endblock %}*/

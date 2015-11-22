@@ -7,50 +7,75 @@ class __TwigTemplate_60d2ecb7e3aa8a6cdd578587d028e844b924cb76d69d0bb2fa0c1dc0f50
     {
         parent::__construct($env);
 
-        $this->parent = false;
-
+        // line 4
+        $this->parent = $this->loadTemplate("EsieaBlogBundle::layout.html.twig", "EsieaBlogBundle:Advert:add.html.twig", 4);
         $this->blocks = array(
+            'title' => array($this, 'block_title'),
+            'esieablog_body' => array($this, 'block_esieablog_body'),
         );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "EsieaBlogBundle::layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ef855dc947607aa5b1996bb5870982c8ce6cb9b10c842405ff129b7ff76cc10e = $this->env->getExtension("native_profiler");
-        $__internal_ef855dc947607aa5b1996bb5870982c8ce6cb9b10c842405ff129b7ff76cc10e->enter($__internal_ef855dc947607aa5b1996bb5870982c8ce6cb9b10c842405ff129b7ff76cc10e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:add.html.twig"));
+        $__internal_890e4ea3b656efdc4ac6a963064d4cbbf6c25b52f65ca801697cbad5849d2252 = $this->env->getExtension("native_profiler");
+        $__internal_890e4ea3b656efdc4ac6a963064d4cbbf6c25b52f65ca801697cbad5849d2252->enter($__internal_890e4ea3b656efdc4ac6a963064d4cbbf6c25b52f65ca801697cbad5849d2252_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:add.html.twig"));
 
-        // line 1
-        echo "<!DOCTYPE html>
-<html>
-<head>
-    <title>ajouter une annonce !</title>
-</head>
-<body>
-<h1>Le formulaire</h1>
-
-<p>
-    ";
-        // line 11
-        echo "    ";
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "flashbag", array()), "get", array(0 => "info"), "method"));
-        foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
-            // line 12
-            echo "<p>Message flash : ";
-            echo twig_escape_filter($this->env, $context["message"], "html", null, true);
-            echo "</p>
-";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 14
-        echo "</p>
-
-
-</body>
-</html>";
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ef855dc947607aa5b1996bb5870982c8ce6cb9b10c842405ff129b7ff76cc10e->leave($__internal_ef855dc947607aa5b1996bb5870982c8ce6cb9b10c842405ff129b7ff76cc10e_prof);
+        $__internal_890e4ea3b656efdc4ac6a963064d4cbbf6c25b52f65ca801697cbad5849d2252->leave($__internal_890e4ea3b656efdc4ac6a963064d4cbbf6c25b52f65ca801697cbad5849d2252_prof);
+
+    }
+
+    // line 7
+    public function block_title($context, array $blocks = array())
+    {
+        $__internal_2663fe9fc160d5215c9a78aef5f5aa9f60497f1cc2898c90b4c190e0fd0e91a6 = $this->env->getExtension("native_profiler");
+        $__internal_2663fe9fc160d5215c9a78aef5f5aa9f60497f1cc2898c90b4c190e0fd0e91a6->enter($__internal_2663fe9fc160d5215c9a78aef5f5aa9f60497f1cc2898c90b4c190e0fd0e91a6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        echo " Ajouter une nouvelle annonce ";
+        
+        $__internal_2663fe9fc160d5215c9a78aef5f5aa9f60497f1cc2898c90b4c190e0fd0e91a6->leave($__internal_2663fe9fc160d5215c9a78aef5f5aa9f60497f1cc2898c90b4c190e0fd0e91a6_prof);
+
+    }
+
+    // line 9
+    public function block_esieablog_body($context, array $blocks = array())
+    {
+        $__internal_6141508ba68d9c048db0eb6f02fe7331c8a085c72b163d7fda57dc1b33ac121d = $this->env->getExtension("native_profiler");
+        $__internal_6141508ba68d9c048db0eb6f02fe7331c8a085c72b163d7fda57dc1b33ac121d->enter($__internal_6141508ba68d9c048db0eb6f02fe7331c8a085c72b163d7fda57dc1b33ac121d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "esieablog_body"));
+
+        // line 10
+        echo "
+
+    <h2>Ajouter une annonce</h2>
+
+    ";
+        // line 14
+        echo twig_include($this->env, $context, "EsieaBlogBundle:Advert:formulaire.html.twig");
+        echo "
+
+    <p>
+        Attention : cette annonce sera ajoutée directement
+        sur la page d'accueil après validation du formulaire.
+
+        <a href=\"";
+        // line 20
+        echo $this->env->getExtension('routing')->getPath("esiea_blog_home");
+        echo "\" class=\"btn btn-default\">
+            <i class=\"glyphicon glyphicon-chevron-left\"></i>
+            Retour à la liste des annonces
+        </a>
+        
+    </p>
+
+";
+        
+        $__internal_6141508ba68d9c048db0eb6f02fe7331c8a085c72b163d7fda57dc1b33ac121d->leave($__internal_6141508ba68d9c048db0eb6f02fe7331c8a085c72b163d7fda57dc1b33ac121d_prof);
 
     }
 
@@ -66,24 +91,36 @@ class __TwigTemplate_60d2ecb7e3aa8a6cdd578587d028e844b924cb76d69d0bb2fa0c1dc0f50
 
     public function getDebugInfo()
     {
-        return array (  47 => 14,  38 => 12,  33 => 11,  22 => 1,);
+        return array (  68 => 20,  59 => 14,  53 => 10,  47 => 9,  35 => 7,  11 => 4,);
     }
 }
-/* <!DOCTYPE html>*/
-/* <html>*/
-/* <head>*/
-/*     <title>ajouter une annonce !</title>*/
-/* </head>*/
-/* <body>*/
-/* <h1>Le formulaire</h1>*/
-/* */
-/* <p>*/
-/*     {# On affiche tous les messages flash dont le nom est « info » #}*/
-/*     {% for message in app.session.flashbag.get('info') %}*/
-/* <p>Message flash : {{ message }}</p>*/
-/* {% endfor %}*/
-/* </p>*/
+/* {# src/Esiea/BlogBundle/Resources/views/Advert/add.html.twig #}*/
 /* */
 /* */
-/* </body>*/
-/* </html>*/
+/* {% extends "EsieaBlogBundle::layout.html.twig" %}*/
+/* */
+/* */
+/* {% block title %} Ajouter une nouvelle annonce {% endblock %}*/
+/* */
+/* {% block esieablog_body %}*/
+/* */
+/* */
+/*     <h2>Ajouter une annonce</h2>*/
+/* */
+/*     {{ include("EsieaBlogBundle:Advert:formulaire.html.twig") }}*/
+/* */
+/*     <p>*/
+/*         Attention : cette annonce sera ajoutée directement*/
+/*         sur la page d'accueil après validation du formulaire.*/
+/* */
+/*         <a href="{{ path('esiea_blog_home') }}" class="btn btn-default">*/
+/*             <i class="glyphicon glyphicon-chevron-left"></i>*/
+/*             Retour à la liste des annonces*/
+/*         </a>*/
+/*         */
+/*     </p>*/
+/* */
+/* {% endblock %}*/
+/* */
+/* */
+/* */

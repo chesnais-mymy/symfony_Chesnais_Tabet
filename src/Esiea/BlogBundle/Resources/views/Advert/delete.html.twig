@@ -1,12 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>supprimation de l'annonce </title>
-</head>
-<body>
-<h1>supprimez votre annonce !</h1>
+{# src/Esiea/BlogBundle/Resources/views/Advert/delete.html.twig #}
 
+{% extends "EsieaBlogBundle::layout.html.twig" %}
 
+{% block title %}
+    Modifier une annonce - {{ parent() }}
+{% endblock %}
 
-</body>
-</html>
+{% block esieablog_body %}
+
+    <h2>Supprimer une annonce</h2>
+
+    {{ include("EsieaBlogBundle:Advert:formulaire.html.twig") }}
+
+    <p>
+      Vous allez supprimer définitivement votre annonce
+    </p>
+
+    <p>
+        <a href="{{ path('esiea_blog_home') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste des annonces
+        </a>
+
+        <a href="{{ path('esiea_blog_view', {'id': advert.id}) }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à l'annonce
+        </a>
+
+    </p>
+
+{% endblock %}

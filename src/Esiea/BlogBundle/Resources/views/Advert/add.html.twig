@@ -1,18 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>ajouter une annonce !</title>
-</head>
-<body>
-<h1>Le formulaire</h1>
-
-<p>
-    {# On affiche tous les messages flash dont le nom est « info » #}
-    {% for message in app.session.flashbag.get('info') %}
-<p>Message flash : {{ message }}</p>
-{% endfor %}
-</p>
+{# src/Esiea/BlogBundle/Resources/views/Advert/add.html.twig #}
 
 
-</body>
-</html>
+{% extends "EsieaBlogBundle::layout.html.twig" %}
+
+
+{% block title %} Ajouter une nouvelle annonce {% endblock %}
+
+{% block esieablog_body %}
+
+
+    <h2>Ajouter une annonce</h2>
+
+    {{ include("EsieaBlogBundle:Advert:formulaire.html.twig") }}
+
+    <p>
+        Attention : cette annonce sera ajoutée directement
+        sur la page d'accueil après validation du formulaire.
+
+        <a href="{{ path('esiea_blog_home') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste des annonces
+        </a>
+
+    </p>
+
+{% endblock %}
+
+

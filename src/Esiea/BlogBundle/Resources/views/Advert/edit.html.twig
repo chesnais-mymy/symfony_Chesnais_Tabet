@@ -1,12 +1,33 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Modification de l'annonce </title>
-  </head>
-  <body>
-    <h1>modifiez votre annonce !</h1>
+{# src/Esiea/BlogBundle/Resources/views/Advert/edit.html.twig #}
 
+{% extends "EsieaBlogBundle::layout.html.twig" %}
 
+{% block title %}
+  Modifier une annonce - {{ parent() }}
+{% endblock %}
 
-  </body>
-</html>
+{% block esieablog_body %}
+
+  <h2>Modifier une annonce</h2>
+
+  {{ include("EsieaBlogBundle:Advert:formulaire.html.twig") }}
+
+  <p>
+    Vous éditez une annonce déjà existante, merci de ne pas changer
+    l'esprit générale de l'annonce déjà publiée.
+  </p>
+
+  <p>
+    <a href="{{ path('esiea_blog_view', {'id': advert.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à l'annonce
+    </a>
+
+    <a href="{{ path('esiea_blog_home') }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à la liste des annonces
+    </a>
+
+  </p>
+
+{% endblock %}
