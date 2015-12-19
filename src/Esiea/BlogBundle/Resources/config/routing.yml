@@ -4,6 +4,7 @@
   #  path:     /
    # defaults: { _controller: EsieaBlogBundle:Default:index }
 
+
 esiea_blog_home:
     path:     /{page}
     defaults: { _controller: EsieaBlogBundle:Advert:index, page: 1 }

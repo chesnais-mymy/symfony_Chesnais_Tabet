@@ -22,34 +22,34 @@ class __TwigTemplate_c958479f423938efb07a06d38c278b1cfb0d7b48b5e80457d629ce3ab46
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7e7a002df3b6a6b5d2ff703050eb792c63ad495849475f9f0c81fac2829a4d0a = $this->env->getExtension("native_profiler");
-        $__internal_7e7a002df3b6a6b5d2ff703050eb792c63ad495849475f9f0c81fac2829a4d0a->enter($__internal_7e7a002df3b6a6b5d2ff703050eb792c63ad495849475f9f0c81fac2829a4d0a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:index.html.twig"));
+        $__internal_283995b2560db3901190f9179a4a3763ecb9a6376979e1679ae37ba1a232cf79 = $this->env->getExtension("native_profiler");
+        $__internal_283995b2560db3901190f9179a4a3763ecb9a6376979e1679ae37ba1a232cf79->enter($__internal_283995b2560db3901190f9179a4a3763ecb9a6376979e1679ae37ba1a232cf79_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_7e7a002df3b6a6b5d2ff703050eb792c63ad495849475f9f0c81fac2829a4d0a->leave($__internal_7e7a002df3b6a6b5d2ff703050eb792c63ad495849475f9f0c81fac2829a4d0a_prof);
+        $__internal_283995b2560db3901190f9179a4a3763ecb9a6376979e1679ae37ba1a232cf79->leave($__internal_283995b2560db3901190f9179a4a3763ecb9a6376979e1679ae37ba1a232cf79_prof);
 
     }
 
     // line 6
     public function block_title($context, array $blocks = array())
     {
-        $__internal_d2996a4741a6e87ad80770f67764b8a0f04f1694e6ebb625dfdd067dc43cfe79 = $this->env->getExtension("native_profiler");
-        $__internal_d2996a4741a6e87ad80770f67764b8a0f04f1694e6ebb625dfdd067dc43cfe79->enter($__internal_d2996a4741a6e87ad80770f67764b8a0f04f1694e6ebb625dfdd067dc43cfe79_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_0b7c47274e7d8eda9e55685d2ac9f192e513e3af2ebcd3d5dfb3064b77d449ea = $this->env->getExtension("native_profiler");
+        $__internal_0b7c47274e7d8eda9e55685d2ac9f192e513e3af2ebcd3d5dfb3064b77d449ea->enter($__internal_0b7c47274e7d8eda9e55685d2ac9f192e513e3af2ebcd3d5dfb3064b77d449ea_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Accueil ";
         $this->displayParentBlock("title", $context, $blocks);
         echo " ";
         
-        $__internal_d2996a4741a6e87ad80770f67764b8a0f04f1694e6ebb625dfdd067dc43cfe79->leave($__internal_d2996a4741a6e87ad80770f67764b8a0f04f1694e6ebb625dfdd067dc43cfe79_prof);
+        $__internal_0b7c47274e7d8eda9e55685d2ac9f192e513e3af2ebcd3d5dfb3064b77d449ea->leave($__internal_0b7c47274e7d8eda9e55685d2ac9f192e513e3af2ebcd3d5dfb3064b77d449ea_prof);
 
     }
 
     // line 8
     public function block_esieablog_body($context, array $blocks = array())
     {
-        $__internal_75f867d4f45069da77e093db8138a6ba6e13b86d3632daee2b408ac884245b84 = $this->env->getExtension("native_profiler");
-        $__internal_75f867d4f45069da77e093db8138a6ba6e13b86d3632daee2b408ac884245b84->enter($__internal_75f867d4f45069da77e093db8138a6ba6e13b86d3632daee2b408ac884245b84_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "esieablog_body"));
+        $__internal_9e438ddc56c1f044f4b7b0a29995b48e181eb067a5baabbe15b055be4f762551 = $this->env->getExtension("native_profiler");
+        $__internal_9e438ddc56c1f044f4b7b0a29995b48e181eb067a5baabbe15b055be4f762551->enter($__internal_9e438ddc56c1f044f4b7b0a29995b48e181eb067a5baabbe15b055be4f762551_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "esieablog_body"));
 
         // line 9
         echo "
@@ -70,12 +70,12 @@ class __TwigTemplate_c958479f423938efb07a06d38c278b1cfb0d7b48b5e80457d629ce3ab46
             echo "\">
                     ";
             // line 16
-            echo twig_escape_filter($this->env, $this->getAttribute($context["advert"], "title", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["advert"], "titre", array()), "html", null, true);
             echo "
                 </a>
                 par ";
             // line 18
-            echo twig_escape_filter($this->env, $this->getAttribute($context["advert"], "author", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["advert"], "auteur", array()), "html", null, true);
             echo ",
                 le ";
             // line 19
@@ -98,7 +98,7 @@ class __TwigTemplate_c958479f423938efb07a06d38c278b1cfb0d7b48b5e80457d629ce3ab46
 
 ";
         
-        $__internal_75f867d4f45069da77e093db8138a6ba6e13b86d3632daee2b408ac884245b84->leave($__internal_75f867d4f45069da77e093db8138a6ba6e13b86d3632daee2b408ac884245b84_prof);
+        $__internal_9e438ddc56c1f044f4b7b0a29995b48e181eb067a5baabbe15b055be4f762551->leave($__internal_9e438ddc56c1f044f4b7b0a29995b48e181eb067a5baabbe15b055be4f762551_prof);
 
     }
 
@@ -132,9 +132,9 @@ class __TwigTemplate_c958479f423938efb07a06d38c278b1cfb0d7b48b5e80457d629ce3ab46
 /*         {% for advert in listAdverts %}*/
 /*             <li>*/
 /*                 <a href="{{ path('esiea_blog_view', {'id': advert.id}) }}">*/
-/*                     {{ advert.title }}*/
+/*                     {{ advert.titre }}*/
 /*                 </a>*/
-/*                 par {{ advert.author }},*/
+/*                 par {{ advert.auteur }},*/
 /*                 le {{ advert.date|date('d/m/Y') }}*/
 /*             </li>*/
 /*         {% else %}*/

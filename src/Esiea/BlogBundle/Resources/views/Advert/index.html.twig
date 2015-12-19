@@ -13,9 +13,9 @@
         {% for advert in listAdverts %}
             <li>
                 <a href="{{ path('esiea_blog_view', {'id': advert.id}) }}">
-                    {{ advert.title }}
+                    {{ advert.titre }}
                 </a>
-                par {{ advert.author }},
+                par {{ advert.auteur }},
                 le {{ advert.date|date('d/m/Y') }}
             </li>
         {% else %}

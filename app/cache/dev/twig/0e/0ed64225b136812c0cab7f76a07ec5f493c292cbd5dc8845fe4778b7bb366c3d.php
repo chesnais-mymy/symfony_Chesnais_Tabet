@@ -15,8 +15,8 @@ class __TwigTemplate_fb211483d31e948b3b03937d14183104e45ac51365558510802d9eea461
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b5ae012bfa3af344e349aaaf7b3689d8db92860a8a084f2c1ba85ac5b7950d6d = $this->env->getExtension("native_profiler");
-        $__internal_b5ae012bfa3af344e349aaaf7b3689d8db92860a8a084f2c1ba85ac5b7950d6d->enter($__internal_b5ae012bfa3af344e349aaaf7b3689d8db92860a8a084f2c1ba85ac5b7950d6d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:menu.html.twig"));
+        $__internal_3456cdea3f508c1a393ee5d7a5759aad086cd4910de9a7063321807d29b7b76f = $this->env->getExtension("native_profiler");
+        $__internal_3456cdea3f508c1a393ee5d7a5759aad086cd4910de9a7063321807d29b7b76f->enter($__internal_3456cdea3f508c1a393ee5d7a5759aad086cd4910de9a7063321807d29b7b76f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:menu.html.twig"));
 
         // line 2
         echo "
@@ -37,7 +37,7 @@ class __TwigTemplate_fb211483d31e948b3b03937d14183104e45ac51365558510802d9eea461
             echo "\">
                 ";
             // line 10
-            echo twig_escape_filter($this->env, $this->getAttribute($context["advert"], "title", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["advert"], "titre", array()), "html", null, true);
             echo "
             </a>
         </li>
@@ -49,7 +49,7 @@ class __TwigTemplate_fb211483d31e948b3b03937d14183104e45ac51365558510802d9eea461
         // line 14
         echo "</ul>";
         
-        $__internal_b5ae012bfa3af344e349aaaf7b3689d8db92860a8a084f2c1ba85ac5b7950d6d->leave($__internal_b5ae012bfa3af344e349aaaf7b3689d8db92860a8a084f2c1ba85ac5b7950d6d_prof);
+        $__internal_3456cdea3f508c1a393ee5d7a5759aad086cd4910de9a7063321807d29b7b76f->leave($__internal_3456cdea3f508c1a393ee5d7a5759aad086cd4910de9a7063321807d29b7b76f_prof);
 
     }
 
@@ -77,7 +77,7 @@ class __TwigTemplate_fb211483d31e948b3b03937d14183104e45ac51365558510802d9eea461
 /*     {% for advert in listAdverts %}*/
 /*         <li>*/
 /*             <a href="{{ path('esiea_blog_view', {'id': advert.id}) }}">*/
-/*                 {{ advert.title }}*/
+/*                 {{ advert.titre }}*/
 /*             </a>*/
 /*         </li>*/
 /*     {% endfor %}*/
