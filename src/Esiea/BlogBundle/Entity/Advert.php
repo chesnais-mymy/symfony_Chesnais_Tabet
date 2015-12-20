@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Advert
  *
  * @ORM\Table()
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Esiea\BlogBundle\Entity\AdvertRepository")
  */
 class Advert
 {
@@ -24,37 +24,44 @@ class Advert
     /**
      * @var string
      *
-     * @ORM\Column(name="titre", type="string", length=255)
+     * @ORM\Column(name="Titre", type="string", length=255)
      */
     private $titre;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="ingrédients", type="text")
+     * @ORM\Column(name="Auteur", type="string", length=255)
+     */
+    private $auteur;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Date", type="string", length=255)
+     */
+    private $date;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Ingredients", type="text")
      */
     private $ingredients;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="content", type="text")
+     * @ORM\Column(name="Preparation", type="text")
      */
-    private $content;
+    private $preparation;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="auteur", type="string", length=255)
+     * @ORM\Column(name="Image", type="string", length=255)
      */
-    private $auteur;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="date", type="datetime")
-     */
-    private $date;
+    private $image;
 
 
     /**
@@ -92,54 +99,6 @@ class Advert
     }
 
     /**
-     * Set ingrédients
-     *
-     * @param string $ingrédients
-     *
-     * @return Advert
-     */
-    public function setIngredients($ingredients)
-    {
-        $this->ingredients = $ingredients;
-
-        return $this;
-    }
-
-    /**
-     * Get ingrédients
-     *
-     * @return string
-     */
-    public function getIngredients()
-    {
-        return $this->ingredients;
-    }
-
-    /**
-     * Set content
-     *
-     * @param string $content
-     *
-     * @return Advert
-     */
-    public function setContent($content)
-    {
-        $this->content = $content;
-
-        return $this;
-    }
-
-    /**
-     * Get content
-     *
-     * @return string
-     */
-    public function getContent()
-    {
-        return $this->content;
-    }
-
-    /**
      * Set auteur
      *
      * @param string $auteur
@@ -166,7 +125,7 @@ class Advert
     /**
      * Set date
      *
-     * @param \DateTime $date
+     * @param string $date
      *
      * @return Advert
      */
@@ -180,11 +139,83 @@ class Advert
     /**
      * Get date
      *
-     * @return \DateTime
+     * @return string
      */
     public function getDate()
     {
         return $this->date;
+    }
+
+    /**
+     * Set ingredients
+     *
+     * @param string $ingredients
+     *
+     * @return Advert
+     */
+    public function setIngredients($ingredients)
+    {
+        $this->ingredients = $ingredients;
+
+        return $this;
+    }
+
+    /**
+     * Get ingredients
+     *
+     * @return string
+     */
+    public function getIngredients()
+    {
+        return $this->ingredients;
+    }
+
+    /**
+     * Set preparation
+     *
+     * @param string $preparation
+     *
+     * @return Advert
+     */
+    public function setPreparation($preparation)
+    {
+        $this->preparation = $preparation;
+
+        return $this;
+    }
+
+    /**
+     * Get preparation
+     *
+     * @return string
+     */
+    public function getPreparation()
+    {
+        return $this->preparation;
+    }
+
+    /**
+     * Set image
+     *
+     * @param string $image
+     *
+     * @return Advert
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
     }
 }
 

@@ -92,9 +92,11 @@ class AdvertController extends Controller
     $formBuilder
         ->add('date',      'date')
         ->add('titre',     'text')
-        ->add('ingredients', 'text')
-        ->add('content',   'text')
         ->add('auteur',    'text')
+        ->add('ingredients', 'text')
+        ->add('preparation',   'text')
+        ->add('image', 'text')
+        
     ;
     // Pour l'instant, pas de candidatures, catégories, etc., on les gérera plus tard
 
