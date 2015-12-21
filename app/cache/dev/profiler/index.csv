@@ -1481,3 +1481,5 @@ ef7211,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine/advert/1,1450705392,,200
 1fc815,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine/edit/1,1450705487,,500
 f27e5d,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450705588,5d7170,200
 5d7170,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine/add,1450705588,,200
+df9d44,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450705686,6e31c2,200
+6e31c2,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine/add,1450705686,,200
