@@ -10,7 +10,7 @@ class __TwigTemplate_e102ee43d8ebb234c22ffacca39634f71058b94476c4a8315d401e3a9b6
         // line 3
         $this->parent = $this->loadTemplate("EsieaBlogBundle::layout.html.twig", "EsieaBlogBundle:Advert:view.html.twig", 3);
         $this->blocks = array(
-            'title' => array($this, 'block_title'),
+            'titre' => array($this, 'block_titre'),
             'esieablog_body' => array($this, 'block_esieablog_body'),
         );
     }
@@ -22,46 +22,46 @@ class __TwigTemplate_e102ee43d8ebb234c22ffacca39634f71058b94476c4a8315d401e3a9b6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fd2865803b3e6ff1ec719018740e684606469d32ae9d07fba8878f32c6921dab = $this->env->getExtension("native_profiler");
-        $__internal_fd2865803b3e6ff1ec719018740e684606469d32ae9d07fba8878f32c6921dab->enter($__internal_fd2865803b3e6ff1ec719018740e684606469d32ae9d07fba8878f32c6921dab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:view.html.twig"));
+        $__internal_ffcc5f4526cd45faf6e28180e4f6f3b3005994f114ebb4bc06349bee7accd326 = $this->env->getExtension("native_profiler");
+        $__internal_ffcc5f4526cd45faf6e28180e4f6f3b3005994f114ebb4bc06349bee7accd326->enter($__internal_ffcc5f4526cd45faf6e28180e4f6f3b3005994f114ebb4bc06349bee7accd326_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:view.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_fd2865803b3e6ff1ec719018740e684606469d32ae9d07fba8878f32c6921dab->leave($__internal_fd2865803b3e6ff1ec719018740e684606469d32ae9d07fba8878f32c6921dab_prof);
+        $__internal_ffcc5f4526cd45faf6e28180e4f6f3b3005994f114ebb4bc06349bee7accd326->leave($__internal_ffcc5f4526cd45faf6e28180e4f6f3b3005994f114ebb4bc06349bee7accd326_prof);
 
     }
 
     // line 5
-    public function block_title($context, array $blocks = array())
+    public function block_titre($context, array $blocks = array())
     {
-        $__internal_830b72001e3b0b0a21bd6968f24bb2b6bf2302ce0df46e5ab33ae7df4a31ee31 = $this->env->getExtension("native_profiler");
-        $__internal_830b72001e3b0b0a21bd6968f24bb2b6bf2302ce0df46e5ab33ae7df4a31ee31->enter($__internal_830b72001e3b0b0a21bd6968f24bb2b6bf2302ce0df46e5ab33ae7df4a31ee31_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_e721317ae385dfd47ff93ea9d08c8064f3c22f2d92fb3d70d6b48c80388c8653 = $this->env->getExtension("native_profiler");
+        $__internal_e721317ae385dfd47ff93ea9d08c8064f3c22f2d92fb3d70d6b48c80388c8653->enter($__internal_e721317ae385dfd47ff93ea9d08c8064f3c22f2d92fb3d70d6b48c80388c8653_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "titre"));
 
         // line 6
         echo "  Lecture d'une annonce - ";
-        $this->displayParentBlock("title", $context, $blocks);
+        $this->displayParentBlock("titre", $context, $blocks);
         echo "
 ";
         
-        $__internal_830b72001e3b0b0a21bd6968f24bb2b6bf2302ce0df46e5ab33ae7df4a31ee31->leave($__internal_830b72001e3b0b0a21bd6968f24bb2b6bf2302ce0df46e5ab33ae7df4a31ee31_prof);
+        $__internal_e721317ae385dfd47ff93ea9d08c8064f3c22f2d92fb3d70d6b48c80388c8653->leave($__internal_e721317ae385dfd47ff93ea9d08c8064f3c22f2d92fb3d70d6b48c80388c8653_prof);
 
     }
 
     // line 9
     public function block_esieablog_body($context, array $blocks = array())
     {
-        $__internal_474124152f62afbe9ef70e1e4448c414ed81fd0a5b632a79ec788c5694c3a9ca = $this->env->getExtension("native_profiler");
-        $__internal_474124152f62afbe9ef70e1e4448c414ed81fd0a5b632a79ec788c5694c3a9ca->enter($__internal_474124152f62afbe9ef70e1e4448c414ed81fd0a5b632a79ec788c5694c3a9ca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "esieablog_body"));
+        $__internal_67a88b0abe0319f8360b67440071070688034aba31575285470a6b75b4558df5 = $this->env->getExtension("native_profiler");
+        $__internal_67a88b0abe0319f8360b67440071070688034aba31575285470a6b75b4558df5->enter($__internal_67a88b0abe0319f8360b67440071070688034aba31575285470a6b75b4558df5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "esieablog_body"));
 
         // line 10
         echo "
   <h2>";
         // line 11
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "title", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "titre", array()), "html", null, true);
         echo "</h2>
   <i>Par ";
         // line 12
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "author", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "auteur", array()), "html", null, true);
         echo ", le ";
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "date", array()), "d/m/Y"), "html", null, true);
         echo "</i>
@@ -69,7 +69,7 @@ class __TwigTemplate_e102ee43d8ebb234c22ffacca39634f71058b94476c4a8315d401e3a9b6
   <div class=\"well\">
     ";
         // line 15
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "content", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "preparation", array()), "html", null, true);
         echo "
   </div>
 
@@ -79,27 +79,27 @@ class __TwigTemplate_e102ee43d8ebb234c22ffacca39634f71058b94476c4a8315d401e3a9b6
         echo $this->env->getExtension('routing')->getPath("esiea_blog_home");
         echo "\" class=\"btn btn-default\">
       <i class=\"glyphicon glyphicon-chevron-left\"></i>
-      Retour à la liste
+      Retour à la liste des recettes
     </a>
     <a href=\"";
         // line 23
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("esiea_blog_edit", array("id" => $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "id", array()))), "html", null, true);
         echo "\" class=\"btn btn-default\">
       <i class=\"glyphicon glyphicon-edit\"></i>
-      Modifier l'annonce
+      Modifier la recette
     </a>
     <a href=\"";
         // line 27
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("esiea_blog_delete", array("id" => $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "id", array()))), "html", null, true);
         echo "\" class=\"btn btn-danger\">
       <i class=\"glyphicon glyphicon-trash\"></i>
-      Supprimer l'annonce
+      Supprimer la recette
     </a>
   </p>
 
 ";
         
-        $__internal_474124152f62afbe9ef70e1e4448c414ed81fd0a5b632a79ec788c5694c3a9ca->leave($__internal_474124152f62afbe9ef70e1e4448c414ed81fd0a5b632a79ec788c5694c3a9ca_prof);
+        $__internal_67a88b0abe0319f8360b67440071070688034aba31575285470a6b75b4558df5->leave($__internal_67a88b0abe0319f8360b67440071070688034aba31575285470a6b75b4558df5_prof);
 
     }
 
@@ -122,31 +122,31 @@ class __TwigTemplate_e102ee43d8ebb234c22ffacca39634f71058b94476c4a8315d401e3a9b6
 /* */
 /* {% extends "EsieaBlogBundle::layout.html.twig" %}*/
 /* */
-/* {% block title %}*/
+/* {% block titre %}*/
 /*   Lecture d'une annonce - {{ parent() }}*/
 /* {% endblock %}*/
 /* */
 /* {% block esieablog_body %}*/
 /* */
-/*   <h2>{{ advert.title }}</h2>*/
-/*   <i>Par {{ advert.author }}, le {{ advert.date|date('d/m/Y') }}</i>*/
+/*   <h2>{{ advert.titre }}</h2>*/
+/*   <i>Par {{ advert.auteur }}, le {{ advert.date|date('d/m/Y') }}</i>*/
 /* */
 /*   <div class="well">*/
-/*     {{ advert.content }}*/
+/*     {{ advert.preparation }}*/
 /*   </div>*/
 /* */
 /*   <p>*/
 /*     <a href="{{ path('esiea_blog_home') }}" class="btn btn-default">*/
 /*       <i class="glyphicon glyphicon-chevron-left"></i>*/
-/*       Retour à la liste*/
+/*       Retour à la liste des recettes*/
 /*     </a>*/
 /*     <a href="{{ path('esiea_blog_edit', {'id': advert.id}) }}" class="btn btn-default">*/
 /*       <i class="glyphicon glyphicon-edit"></i>*/
-/*       Modifier l'annonce*/
+/*       Modifier la recette*/
 /*     </a>*/
 /*     <a href="{{ path('esiea_blog_delete', {'id': advert.id}) }}" class="btn btn-danger">*/
 /*       <i class="glyphicon glyphicon-trash"></i>*/
-/*       Supprimer l'annonce*/
+/*       Supprimer la recette*/
 /*     </a>*/
 /*   </p>*/
 /* */

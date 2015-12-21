@@ -17,28 +17,27 @@
 <body>
 <div class="container">
     <div id="header" class="jumbotron">
-        <h1>Ma plateforme d'annonces</h1>
+        <h1>Blog de Cuisine M&H</h1>
         <p>
-            Ce projet est propulsé par Symfony2,
-            et construit grâce au MOOC OpenClassrooms et SensioLabs.
+            Ce blog a été réalisé par Chesnais Myriam et Tabet Hafida
         </p>
         <p>
-            <a class="btn btn-primary btn-lg" href="http://fr.openclassrooms.com/informatique/cours/developpez-votre-site-web-avec-le-framework-symfony2">
-                Participer au MOOC »
+            <a class="btn btn-primary btn-lg" href="https://www.facebook.com/groups/1669608549949358/">
+                Go sur notre page facebook -->
             </a>
         </p>
     </div>
 
     <div class="row">
         <div id="menu" class="col-md-3">
-            <h3>Les annonces</h3>
+            <h3>Menu principal</h3>
             <ul class="nav nav-pills nav-stacked">
                 <li><a href="{{ path('esiea_blog_home') }}">Accueil</a></li>
-                <li><a href="{{ path('esiea_blog_add') }}">Ajouter une annonce</a></li>
+                <li><a href="{{ path('esiea_blog_add') }}">Ajouter une nouvelle recette</a></li>
             </ul>
 
-            <h4>Dernières annonces</h4>
-            {{ render(controller("EsieaBlogBundle:Advert:menu", {'limit': 3})) }}
+            <h4>Les dernières recettes</h4>
+            {{ render(controller("EsieaBlogBundle:Advert:menu", {'limit': 4})) }}
         </div>
         <div id="content" class="col-md-9">
             {% block body %}
@@ -49,7 +48,7 @@
     <hr>
 
     <footer>
-        <p>The sky's the limit © {{ 'now'|date('Y') }} and beyond.</p>
+        <p>Copyright: Chesnais et Tabet</p>
     </footer>
 </div>
 

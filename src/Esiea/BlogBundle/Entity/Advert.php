@@ -69,6 +69,11 @@ class Advert
      *
      * @return integer
      */
+
+      public function __construct()
+  {
+    $this->date         = new \Datetime();
+  }
     public function getId()
     {
         return $this->id;
@@ -218,4 +223,3 @@ class Advert
         return $this->image;
     }
 }
-
