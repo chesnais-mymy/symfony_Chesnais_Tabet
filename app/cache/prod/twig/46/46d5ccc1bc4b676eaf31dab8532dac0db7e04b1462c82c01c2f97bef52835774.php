@@ -35,7 +35,7 @@ Hello!
         return array (  19 => 2,);
     }
 }
-/* {# src/OC/PlatformBundle/Resources/views/Default/index.html.twig #}*/
+/* {# src/Esiea/<blogBundle/Resources/views/Default/index.html.twig #}*/
 /* */
 /* <html>*/
 /* <body>*/

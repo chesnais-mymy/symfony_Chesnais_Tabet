@@ -36,9 +36,9 @@ class Advert
     private $auteur;
 
     /**
-     * @var string
+     * @var  \DateTime
      *
-     * @ORM\Column(name="Date", type="string", length=255)
+     * @ORM\Column(name="Date", type="datetime", length=255)
      */
     private $date;
 
@@ -130,7 +130,7 @@ class Advert
     /**
      * Set date
      *
-     * @param string $date
+     * @param \DateTime $date
      *
      * @return Advert
      */
@@ -144,7 +144,7 @@ class Advert
     /**
      * Get date
      *
-     * @return string
+     * @return \DateTime
      */
     public function getDate()
     {

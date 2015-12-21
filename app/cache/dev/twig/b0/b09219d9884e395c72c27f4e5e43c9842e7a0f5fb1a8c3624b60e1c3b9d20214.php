@@ -15,12 +15,12 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_26cd56570f3f522d6a46365c0175053cc84729299deca775a13b5be0b388dcde = $this->env->getExtension("native_profiler");
-        $__internal_26cd56570f3f522d6a46365c0175053cc84729299deca775a13b5be0b388dcde->enter($__internal_26cd56570f3f522d6a46365c0175053cc84729299deca775a13b5be0b388dcde_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:formulaire.html.twig"));
+        $__internal_7eb55853b75df2ea33c9ad9134097f4afe0f57f667c3ba46d65631177fbc1adf = $this->env->getExtension("native_profiler");
+        $__internal_7eb55853b75df2ea33c9ad9134097f4afe0f57f667c3ba46d65631177fbc1adf->enter($__internal_7eb55853b75df2ea33c9ad9134097f4afe0f57f667c3ba46d65631177fbc1adf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:formulaire.html.twig"));
 
         // line 2
         echo "
-<h3>Formulaire de recettes</h3>
+<h3>Formulaire</h3>
 
 <div class=\"well\">
   ";
@@ -127,7 +127,7 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
 </div>
 ";
         
-        $__internal_26cd56570f3f522d6a46365c0175053cc84729299deca775a13b5be0b388dcde->leave($__internal_26cd56570f3f522d6a46365c0175053cc84729299deca775a13b5be0b388dcde_prof);
+        $__internal_7eb55853b75df2ea33c9ad9134097f4afe0f57f667c3ba46d65631177fbc1adf->leave($__internal_7eb55853b75df2ea33c9ad9134097f4afe0f57f667c3ba46d65631177fbc1adf_prof);
 
     }
 
@@ -148,7 +148,7 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
 }
 /* {# src/Esiea/BlogBundle/Resources/views/Advert/formulaire.html.twig #}*/
 /* */
-/* <h3>Formulaire de recettes</h3>*/
+/* <h3>Formulaire</h3>*/
 /* */
 /* <div class="well">*/
 /*   {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}*/

@@ -22,40 +22,40 @@ class __TwigTemplate_2b32ca0c5883d57db79b75a6a5ac4c3c53eaa1044e7a9198b4b9270f7a2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d6424087cc4cd4c5f1bd3ebeae5008fabcb192e75fdb37e53b7a0b714b0c998c = $this->env->getExtension("native_profiler");
-        $__internal_d6424087cc4cd4c5f1bd3ebeae5008fabcb192e75fdb37e53b7a0b714b0c998c->enter($__internal_d6424087cc4cd4c5f1bd3ebeae5008fabcb192e75fdb37e53b7a0b714b0c998c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:edit.html.twig"));
+        $__internal_7a4332d6204a77b6686ba412bb2ad99614fde6cb7b2fc4d2e38d42e7ba0f1c96 = $this->env->getExtension("native_profiler");
+        $__internal_7a4332d6204a77b6686ba412bb2ad99614fde6cb7b2fc4d2e38d42e7ba0f1c96->enter($__internal_7a4332d6204a77b6686ba412bb2ad99614fde6cb7b2fc4d2e38d42e7ba0f1c96_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:edit.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_d6424087cc4cd4c5f1bd3ebeae5008fabcb192e75fdb37e53b7a0b714b0c998c->leave($__internal_d6424087cc4cd4c5f1bd3ebeae5008fabcb192e75fdb37e53b7a0b714b0c998c_prof);
+        $__internal_7a4332d6204a77b6686ba412bb2ad99614fde6cb7b2fc4d2e38d42e7ba0f1c96->leave($__internal_7a4332d6204a77b6686ba412bb2ad99614fde6cb7b2fc4d2e38d42e7ba0f1c96_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_a7033cf73d510e169de752b5259426beb094cee98c8f1b4846ada3b000adb996 = $this->env->getExtension("native_profiler");
-        $__internal_a7033cf73d510e169de752b5259426beb094cee98c8f1b4846ada3b000adb996->enter($__internal_a7033cf73d510e169de752b5259426beb094cee98c8f1b4846ada3b000adb996_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_dcd4469e96769fc6aa63f0ca3c310b6b45452485ddcb80166f7769e2b6d6f893 = $this->env->getExtension("native_profiler");
+        $__internal_dcd4469e96769fc6aa63f0ca3c310b6b45452485ddcb80166f7769e2b6d6f893->enter($__internal_dcd4469e96769fc6aa63f0ca3c310b6b45452485ddcb80166f7769e2b6d6f893_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 6
-        echo "  Modifier une annonce - ";
+        echo "  Modifier une recette - ";
         $this->displayParentBlock("title", $context, $blocks);
         echo "
 ";
         
-        $__internal_a7033cf73d510e169de752b5259426beb094cee98c8f1b4846ada3b000adb996->leave($__internal_a7033cf73d510e169de752b5259426beb094cee98c8f1b4846ada3b000adb996_prof);
+        $__internal_dcd4469e96769fc6aa63f0ca3c310b6b45452485ddcb80166f7769e2b6d6f893->leave($__internal_dcd4469e96769fc6aa63f0ca3c310b6b45452485ddcb80166f7769e2b6d6f893_prof);
 
     }
 
     // line 9
     public function block_esieablog_body($context, array $blocks = array())
     {
-        $__internal_b5ae283de5f18a91f952bdbcee2ab49563b2b27d9414ca957a5973abc4df19da = $this->env->getExtension("native_profiler");
-        $__internal_b5ae283de5f18a91f952bdbcee2ab49563b2b27d9414ca957a5973abc4df19da->enter($__internal_b5ae283de5f18a91f952bdbcee2ab49563b2b27d9414ca957a5973abc4df19da_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "esieablog_body"));
+        $__internal_460063827e84f0a617ffc773d75c8e4862aab853335f9bbb87d95e4d8765cb17 = $this->env->getExtension("native_profiler");
+        $__internal_460063827e84f0a617ffc773d75c8e4862aab853335f9bbb87d95e4d8765cb17->enter($__internal_460063827e84f0a617ffc773d75c8e4862aab853335f9bbb87d95e4d8765cb17_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "esieablog_body"));
 
         // line 10
         echo "
-  <h2>Modifier une annonce</h2>
+  <h2>Modifier votre recette</h2>
 
   ";
         // line 13
@@ -88,7 +88,7 @@ class __TwigTemplate_2b32ca0c5883d57db79b75a6a5ac4c3c53eaa1044e7a9198b4b9270f7a2
 
 ";
         
-        $__internal_b5ae283de5f18a91f952bdbcee2ab49563b2b27d9414ca957a5973abc4df19da->leave($__internal_b5ae283de5f18a91f952bdbcee2ab49563b2b27d9414ca957a5973abc4df19da_prof);
+        $__internal_460063827e84f0a617ffc773d75c8e4862aab853335f9bbb87d95e4d8765cb17->leave($__internal_460063827e84f0a617ffc773d75c8e4862aab853335f9bbb87d95e4d8765cb17_prof);
 
     }
 
@@ -112,12 +112,12 @@ class __TwigTemplate_2b32ca0c5883d57db79b75a6a5ac4c3c53eaa1044e7a9198b4b9270f7a2
 /* {% extends "EsieaBlogBundle::layout.html.twig" %}*/
 /* */
 /* {% block title %}*/
-/*   Modifier une annonce - {{ parent() }}*/
+/*   Modifier une recette - {{ parent() }}*/
 /* {% endblock %}*/
 /* */
 /* {% block esieablog_body %}*/
 /* */
-/*   <h2>Modifier une annonce</h2>*/
+/*   <h2>Modifier votre recette</h2>*/
 /* */
 /*   {{ include("EsieaBlogBundle:Advert:formulaire.html.twig") }}*/
 /* */

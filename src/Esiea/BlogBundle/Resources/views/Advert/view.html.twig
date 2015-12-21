@@ -11,8 +11,20 @@
   <h2>{{ advert.titre }}</h2>
   <i>Par {{ advert.auteur }}, le {{ advert.date|date('d/m/Y') }}</i>
 
+
   <div class="well">
-    {{ advert.preparation }}
+
+   <i> Les ingrédients : {{ advert.ingredients }} </i>
+  </div>
+
+  <div class="well">
+
+   <i> La préparation : {{ advert.preparation }} </i>
+  </div>
+
+<div class="well">
+
+   <i> L'image {{ advert.image }} </i>
   </div>
 
   <p>

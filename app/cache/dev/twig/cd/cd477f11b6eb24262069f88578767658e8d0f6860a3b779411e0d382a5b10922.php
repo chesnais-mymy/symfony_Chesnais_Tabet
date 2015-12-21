@@ -19,8 +19,8 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_de94c08c5403f4d9047b5a1eb24da6a2419f615e5c1dc078d03c0d851a8ce743 = $this->env->getExtension("native_profiler");
-        $__internal_de94c08c5403f4d9047b5a1eb24da6a2419f615e5c1dc078d03c0d851a8ce743->enter($__internal_de94c08c5403f4d9047b5a1eb24da6a2419f615e5c1dc078d03c0d851a8ce743_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::layout.html.twig"));
+        $__internal_909bb15e68acab3d534420a21768d2f5309a48c0e29778f37f54e4cc9ba00e3f = $this->env->getExtension("native_profiler");
+        $__internal_909bb15e68acab3d534420a21768d2f5309a48c0e29778f37f54e4cc9ba00e3f->enter($__internal_909bb15e68acab3d534420a21768d2f5309a48c0e29778f37f54e4cc9ba00e3f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::layout.html.twig"));
 
         // line 2
         echo "
@@ -46,7 +46,7 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
     <div id=\"header\" class=\"jumbotron\">
         <h1>Blog de Cuisine M&H</h1>
         <p>
-            \"La vraie cuisine est une forme d’art. Un cadeau à partager.
+            La vraie cuisine est une forme d’art. Un cadeau à partager.
         </p>
         <p>
             <a class=\"btn btn-primary btn-lg\" href=\"https://www.facebook.com/groups/1669608549949358/\">
@@ -98,27 +98,27 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
 </body>
 </html>";
         
-        $__internal_de94c08c5403f4d9047b5a1eb24da6a2419f615e5c1dc078d03c0d851a8ce743->leave($__internal_de94c08c5403f4d9047b5a1eb24da6a2419f615e5c1dc078d03c0d851a8ce743_prof);
+        $__internal_909bb15e68acab3d534420a21768d2f5309a48c0e29778f37f54e4cc9ba00e3f->leave($__internal_909bb15e68acab3d534420a21768d2f5309a48c0e29778f37f54e4cc9ba00e3f_prof);
 
     }
 
     // line 9
     public function block_title($context, array $blocks = array())
     {
-        $__internal_b564ed03b94832e925b06bae624395833a1a762de764c33b061d124356fcf977 = $this->env->getExtension("native_profiler");
-        $__internal_b564ed03b94832e925b06bae624395833a1a762de764c33b061d124356fcf977->enter($__internal_b564ed03b94832e925b06bae624395833a1a762de764c33b061d124356fcf977_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_38cfbfaf04002001bba81ce8df65ec5c35b413787dc856e5d4ba8582ef7f8639 = $this->env->getExtension("native_profiler");
+        $__internal_38cfbfaf04002001bba81ce8df65ec5c35b413787dc856e5d4ba8582ef7f8639->enter($__internal_38cfbfaf04002001bba81ce8df65ec5c35b413787dc856e5d4ba8582ef7f8639_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Le blog de Cuisine de Myriam et hafida";
         
-        $__internal_b564ed03b94832e925b06bae624395833a1a762de764c33b061d124356fcf977->leave($__internal_b564ed03b94832e925b06bae624395833a1a762de764c33b061d124356fcf977_prof);
+        $__internal_38cfbfaf04002001bba81ce8df65ec5c35b413787dc856e5d4ba8582ef7f8639->leave($__internal_38cfbfaf04002001bba81ce8df65ec5c35b413787dc856e5d4ba8582ef7f8639_prof);
 
     }
 
     // line 11
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_4661a3935714a7619443e6dd036fda12920e4869b7042b47f2324a36380138be = $this->env->getExtension("native_profiler");
-        $__internal_4661a3935714a7619443e6dd036fda12920e4869b7042b47f2324a36380138be->enter($__internal_4661a3935714a7619443e6dd036fda12920e4869b7042b47f2324a36380138be_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_edf3bf0563bbf76ed306e7182afa25617a0bc15b60bbe5a60f63045dd51e6fae = $this->env->getExtension("native_profiler");
+        $__internal_edf3bf0563bbf76ed306e7182afa25617a0bc15b60bbe5a60f63045dd51e6fae->enter($__internal_edf3bf0563bbf76ed306e7182afa25617a0bc15b60bbe5a60f63045dd51e6fae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 12
         echo "        ";
@@ -126,28 +126,28 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
         echo "        <link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css\">
     ";
         
-        $__internal_4661a3935714a7619443e6dd036fda12920e4869b7042b47f2324a36380138be->leave($__internal_4661a3935714a7619443e6dd036fda12920e4869b7042b47f2324a36380138be_prof);
+        $__internal_edf3bf0563bbf76ed306e7182afa25617a0bc15b60bbe5a60f63045dd51e6fae->leave($__internal_edf3bf0563bbf76ed306e7182afa25617a0bc15b60bbe5a60f63045dd51e6fae_prof);
 
     }
 
     // line 43
     public function block_body($context, array $blocks = array())
     {
-        $__internal_bc7c175ec5a2f38d91fc87e2d48a462b8750ee92e672392cd4515237a334ef6e = $this->env->getExtension("native_profiler");
-        $__internal_bc7c175ec5a2f38d91fc87e2d48a462b8750ee92e672392cd4515237a334ef6e->enter($__internal_bc7c175ec5a2f38d91fc87e2d48a462b8750ee92e672392cd4515237a334ef6e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_d4c0dafd7ed39fa2e4708bae83d1dfb112cffa3712f75315267fbab2b3eefd08 = $this->env->getExtension("native_profiler");
+        $__internal_d4c0dafd7ed39fa2e4708bae83d1dfb112cffa3712f75315267fbab2b3eefd08->enter($__internal_d4c0dafd7ed39fa2e4708bae83d1dfb112cffa3712f75315267fbab2b3eefd08_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 44
         echo "            ";
         
-        $__internal_bc7c175ec5a2f38d91fc87e2d48a462b8750ee92e672392cd4515237a334ef6e->leave($__internal_bc7c175ec5a2f38d91fc87e2d48a462b8750ee92e672392cd4515237a334ef6e_prof);
+        $__internal_d4c0dafd7ed39fa2e4708bae83d1dfb112cffa3712f75315267fbab2b3eefd08->leave($__internal_d4c0dafd7ed39fa2e4708bae83d1dfb112cffa3712f75315267fbab2b3eefd08_prof);
 
     }
 
     // line 55
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_b56f98547c924c3de5370b0cf788dc56d067845393868cc5419d85deda7184d5 = $this->env->getExtension("native_profiler");
-        $__internal_b56f98547c924c3de5370b0cf788dc56d067845393868cc5419d85deda7184d5->enter($__internal_b56f98547c924c3de5370b0cf788dc56d067845393868cc5419d85deda7184d5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_422ce1fee0d46dc4a00c0d930fcd8948b37e9cbfdd8733737ff80c6be7a1bea5 = $this->env->getExtension("native_profiler");
+        $__internal_422ce1fee0d46dc4a00c0d930fcd8948b37e9cbfdd8733737ff80c6be7a1bea5->enter($__internal_422ce1fee0d46dc4a00c0d930fcd8948b37e9cbfdd8733737ff80c6be7a1bea5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 56
         echo "    ";
@@ -156,7 +156,7 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
     <script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js\"></script>
 ";
         
-        $__internal_b56f98547c924c3de5370b0cf788dc56d067845393868cc5419d85deda7184d5->leave($__internal_b56f98547c924c3de5370b0cf788dc56d067845393868cc5419d85deda7184d5_prof);
+        $__internal_422ce1fee0d46dc4a00c0d930fcd8948b37e9cbfdd8733737ff80c6be7a1bea5->leave($__internal_422ce1fee0d46dc4a00c0d930fcd8948b37e9cbfdd8733737ff80c6be7a1bea5_prof);
 
     }
 
@@ -196,7 +196,7 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
 /*     <div id="header" class="jumbotron">*/
 /*         <h1>Blog de Cuisine M&H</h1>*/
 /*         <p>*/
-/*             "La vraie cuisine est une forme d’art. Un cadeau à partager.*/
+/*             La vraie cuisine est une forme d’art. Un cadeau à partager.*/
 /*         </p>*/
 /*         <p>*/
 /*             <a class="btn btn-primary btn-lg" href="https://www.facebook.com/groups/1669608549949358/">*/
