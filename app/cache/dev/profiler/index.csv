@@ -1472,3 +1472,12 @@ d826af,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine/add,1450704911,40ac65,20
 fb196c,127.0.0.1,POST,http://127.0.0.1:8000/Blog_Cuisine/add,1450704974,,500
 602e16,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450705022,98d867,200
 98d867,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450705022,,200
+d39dbf,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450705291,9dc04a,200
+9dc04a,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine/advert/1,1450705291,,200
+0c5155,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450705392,ef7211,200
+ef7211,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine/advert/1,1450705392,,200
+7d5df9,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450705486,1fc815,200
+68b804,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine/edit/1,1450705487,1fc815,200
+1fc815,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine/edit/1,1450705487,,500
+f27e5d,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450705588,5d7170,200
+5d7170,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine/add,1450705588,,200

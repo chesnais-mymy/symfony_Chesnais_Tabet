@@ -15,8 +15,8 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6e846d6a3b109d2bea53b5d748f53e7221ce8f0e9c31b19856932e2eac6cc4db = $this->env->getExtension("native_profiler");
-        $__internal_6e846d6a3b109d2bea53b5d748f53e7221ce8f0e9c31b19856932e2eac6cc4db->enter($__internal_6e846d6a3b109d2bea53b5d748f53e7221ce8f0e9c31b19856932e2eac6cc4db_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:formulaire.html.twig"));
+        $__internal_26cd56570f3f522d6a46365c0175053cc84729299deca775a13b5be0b388dcde = $this->env->getExtension("native_profiler");
+        $__internal_26cd56570f3f522d6a46365c0175053cc84729299deca775a13b5be0b388dcde->enter($__internal_26cd56570f3f522d6a46365c0175053cc84729299deca775a13b5be0b388dcde_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:formulaire.html.twig"));
 
         // line 2
         echo "
@@ -102,7 +102,10 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
       </div>
     </div>
 
-
+";
+        // line 46
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "image", array()), 'row');
+        echo "
 
   ";
         // line 49
@@ -124,7 +127,7 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
 </div>
 ";
         
-        $__internal_6e846d6a3b109d2bea53b5d748f53e7221ce8f0e9c31b19856932e2eac6cc4db->leave($__internal_6e846d6a3b109d2bea53b5d748f53e7221ce8f0e9c31b19856932e2eac6cc4db_prof);
+        $__internal_26cd56570f3f522d6a46365c0175053cc84729299deca775a13b5be0b388dcde->leave($__internal_26cd56570f3f522d6a46365c0175053cc84729299deca775a13b5be0b388dcde_prof);
 
     }
 
@@ -140,7 +143,7 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
 
     public function getDebugInfo()
     {
-        return array (  121 => 57,  115 => 54,  109 => 49,  100 => 42,  95 => 40,  91 => 39,  83 => 34,  78 => 32,  74 => 31,  68 => 28,  60 => 24,  53 => 20,  47 => 17,  39 => 12,  33 => 9,  28 => 6,  22 => 2,);
+        return array (  124 => 57,  118 => 54,  112 => 49,  107 => 46,  100 => 42,  95 => 40,  91 => 39,  83 => 34,  78 => 32,  74 => 31,  68 => 28,  60 => 24,  53 => 20,  47 => 17,  39 => 12,  33 => 9,  28 => 6,  22 => 2,);
     }
 }
 /* {# src/Esiea/BlogBundle/Resources/views/Advert/formulaire.html.twig #}*/
@@ -188,7 +191,7 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
 /*       </div>*/
 /*     </div>*/
 /* */
-/* */
+/* {{ form_row(form.image) }}*/
 /* */
 /*   {# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}*/
 /*   {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}*/
