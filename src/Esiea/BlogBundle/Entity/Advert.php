@@ -56,13 +56,6 @@ class Advert
      */
     private $preparation;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Image", type="string", length=255)
-     */
-    private $image;
-
 
     /**
      * Get id
@@ -199,27 +192,5 @@ class Advert
         return $this->preparation;
     }
 
-    /**
-     * Set image
-     *
-     * @param string $image
-     *
-     * @return Advert
-     */
-    public function setImage($image)
-    {
-        $this->image = $image;
 
-        return $this;
-    }
-
-    /**
-     * Get image
-     *
-     * @return string
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
 }

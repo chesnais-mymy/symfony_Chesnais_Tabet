@@ -35,16 +35,16 @@ class __TwigTemplate_34e453d23aa08d094d41d9b020ed9e03d7e09dbeca990828e7f81ac03fc
     ";
         // line 11
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 15
+        // line 16
         echo "</head>
 
 <body>
 <div class=\"container\">
     <div id=\"header\" class=\"jumbotron\">
         <h1>Blog de Cuisine M&H</h1>
-        <p>
-            \"La vraie cuisine est une forme d’art. Un cadeau à partager.
-        </p>
+        <p1>
+            La vraie cuisine est une forme d’art, un cadeau à partager.
+        </p1>
         <p>
             <a class=\"btn btn-primary btn-lg\" href=\"https://www.facebook.com/groups/1669608549949358/\">
                 Go sur notre page facebook -->
@@ -52,45 +52,47 @@ class __TwigTemplate_34e453d23aa08d094d41d9b020ed9e03d7e09dbeca990828e7f81ac03fc
         </p>
     </div>
 
+
     <div class=\"row\">
-        <div id=\"menu\" class=\"col-md-3\">
+        <div id=\"menu\" class=\"col-md-4\">
             <h3>Menu principal</h3>
             <ul class=\"nav nav-pills nav-stacked\">
                 <li><a href=\"";
-        // line 35
+        // line 37
         echo $this->env->getExtension('routing')->getPath("esiea_blog_home");
         echo "\">Accueil</a></li>
                 <li><a href=\"";
-        // line 36
+        // line 38
         echo $this->env->getExtension('routing')->getPath("esiea_blog_add");
         echo "\">Ajouter une nouvelle recette</a></li>
             </ul>
 
             <h4>Les dernières recettes</h4>
             ";
-        // line 40
+        // line 42
         echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("EsieaBlogBundle:Advert:menu", array("limit" => 4)));
         echo "
         </div>
-        <div id=\"content\" class=\"col-md-9\">
+
+        <div id=\"preparation\" class=\"col-md-8\">
             ";
-        // line 43
+        // line 46
         $this->displayBlock('body', $context, $blocks);
-        // line 45
+        // line 49
         echo "        </div>
     </div>
 
     <hr>
 
     <footer>
-        <p>Copyright: Chesnais et Tabet</p>
+        <p2>            Copyright: Chesnais Myriam et Tabet Hafida</p2>
     </footer>
 </div>
 
 ";
-        // line 55
+        // line 59
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 60
+        // line 63
         echo "
 </body>
 </html>";
@@ -108,23 +110,23 @@ class __TwigTemplate_34e453d23aa08d094d41d9b020ed9e03d7e09dbeca990828e7f81ac03fc
         // line 12
         echo "        ";
         // line 13
-        echo "        <link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css\">
+        echo "        <link rel=\"stylesheet\" href=\"/css/bootstrap.min.css\">
+        <link rel=\"stylesheet\" href=\"/css/originalite.css\">
     ";
     }
 
-    // line 43
+    // line 46
     public function block_body($context, array $blocks = array())
     {
-        // line 44
-        echo "            ";
+        // line 47
+        echo "
+            ";
     }
 
-    // line 55
+    // line 59
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 56
-        echo "    ";
-        // line 57
+        // line 60
         echo "    <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>
     <script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js\"></script>
 ";
@@ -142,7 +144,7 @@ class __TwigTemplate_34e453d23aa08d094d41d9b020ed9e03d7e09dbeca990828e7f81ac03fc
 
     public function getDebugInfo()
     {
-        return array (  128 => 57,  126 => 56,  123 => 55,  119 => 44,  116 => 43,  111 => 13,  109 => 12,  106 => 11,  100 => 9,  94 => 60,  92 => 55,  80 => 45,  78 => 43,  72 => 40,  65 => 36,  61 => 35,  39 => 15,  37 => 11,  32 => 9,  23 => 2,);
+        return array (  130 => 60,  127 => 59,  122 => 47,  119 => 46,  113 => 13,  111 => 12,  108 => 11,  102 => 9,  96 => 63,  94 => 59,  82 => 49,  80 => 46,  73 => 42,  66 => 38,  62 => 37,  39 => 16,  37 => 11,  32 => 9,  23 => 2,);
     }
 }
 /* {# app/Resources/views/layout.html.twig #}*/
@@ -157,7 +159,8 @@ class __TwigTemplate_34e453d23aa08d094d41d9b020ed9e03d7e09dbeca990828e7f81ac03fc
 /* */
 /*     {% block stylesheets %}*/
 /*         {# On charge le CSS de bootstrap depuis le site directement #}*/
-/*         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">*/
+/*         <link rel="stylesheet" href="/css/bootstrap.min.css">*/
+/*         <link rel="stylesheet" href="/css/originalite.css">*/
 /*     {% endblock %}*/
 /* </head>*/
 /* */
@@ -165,9 +168,9 @@ class __TwigTemplate_34e453d23aa08d094d41d9b020ed9e03d7e09dbeca990828e7f81ac03fc
 /* <div class="container">*/
 /*     <div id="header" class="jumbotron">*/
 /*         <h1>Blog de Cuisine M&H</h1>*/
-/*         <p>*/
-/*             "La vraie cuisine est une forme d’art. Un cadeau à partager.*/
-/*         </p>*/
+/*         <p1>*/
+/*             La vraie cuisine est une forme d’art, un cadeau à partager.*/
+/*         </p1>*/
 /*         <p>*/
 /*             <a class="btn btn-primary btn-lg" href="https://www.facebook.com/groups/1669608549949358/">*/
 /*                 Go sur notre page facebook -->*/
@@ -175,8 +178,9 @@ class __TwigTemplate_34e453d23aa08d094d41d9b020ed9e03d7e09dbeca990828e7f81ac03fc
 /*         </p>*/
 /*     </div>*/
 /* */
+/* */
 /*     <div class="row">*/
-/*         <div id="menu" class="col-md-3">*/
+/*         <div id="menu" class="col-md-4">*/
 /*             <h3>Menu principal</h3>*/
 /*             <ul class="nav nav-pills nav-stacked">*/
 /*                 <li><a href="{{ path('esiea_blog_home') }}">Accueil</a></li>*/
@@ -186,8 +190,10 @@ class __TwigTemplate_34e453d23aa08d094d41d9b020ed9e03d7e09dbeca990828e7f81ac03fc
 /*             <h4>Les dernières recettes</h4>*/
 /*             {{ render(controller("EsieaBlogBundle:Advert:menu", {'limit': 4})) }}*/
 /*         </div>*/
-/*         <div id="content" class="col-md-9">*/
+/* */
+/*         <div id="preparation" class="col-md-8">*/
 /*             {% block body %}*/
+/* */
 /*             {% endblock %}*/
 /*         </div>*/
 /*     </div>*/
@@ -195,12 +201,11 @@ class __TwigTemplate_34e453d23aa08d094d41d9b020ed9e03d7e09dbeca990828e7f81ac03fc
 /*     <hr>*/
 /* */
 /*     <footer>*/
-/*         <p>Copyright: Chesnais et Tabet</p>*/
+/*         <p2>            Copyright: Chesnais Myriam et Tabet Hafida</p2>*/
 /*     </footer>*/
 /* </div>*/
 /* */
 /* {% block javascripts %}*/
-/*     {# Ajoutez ces lignes JavaScript si vous comptez vous servir des fonctionnalités du bootstrap Twitter #}*/
 /*     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>*/
 /*     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>*/
 /* {% endblock %}*/

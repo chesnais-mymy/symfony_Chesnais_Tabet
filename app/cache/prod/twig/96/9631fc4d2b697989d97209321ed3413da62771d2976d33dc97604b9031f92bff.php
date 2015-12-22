@@ -45,11 +45,9 @@ class __TwigTemplate_0812b55db44f6104fe7caa43da18c7dc0b4c2aa9023e538bfc0bbe959a2
         echo "
 
     <p>
-        Attention : cette annonce sera ajoutée directement
-        sur la page d'accueil après validation du formulaire.
 
         <a href=\"";
-        // line 20
+        // line 18
         echo $this->env->getExtension('routing')->getPath("esiea_blog_home");
         echo "\" class=\"btn btn-default\">
             <i class=\"glyphicon glyphicon-chevron-left\"></i>
@@ -73,7 +71,7 @@ class __TwigTemplate_0812b55db44f6104fe7caa43da18c7dc0b4c2aa9023e538bfc0bbe959a2
 
     public function getDebugInfo()
     {
-        return array (  53 => 20,  44 => 14,  38 => 10,  35 => 9,  29 => 7,  11 => 4,);
+        return array (  51 => 18,  44 => 14,  38 => 10,  35 => 9,  29 => 7,  11 => 4,);
     }
 }
 /* {# src/Esiea/BlogBundle/Resources/views/Advert/add.html.twig #}*/
@@ -92,8 +90,6 @@ class __TwigTemplate_0812b55db44f6104fe7caa43da18c7dc0b4c2aa9023e538bfc0bbe959a2
 /*     {{ include("EsieaBlogBundle:Advert:formulaire.html.twig") }}*/
 /* */
 /*     <p>*/
-/*         Attention : cette annonce sera ajoutée directement*/
-/*         sur la page d'accueil après validation du formulaire.*/
 /* */
 /*         <a href="{{ path('esiea_blog_home') }}" class="btn btn-default">*/
 /*             <i class="glyphicon glyphicon-chevron-left"></i>*/

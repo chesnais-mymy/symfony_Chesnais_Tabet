@@ -43,23 +43,24 @@ class __TwigTemplate_322dd6d8400e2330371fcb02e63ed38b033f546f92a748f77220385e960
         echo "
     ";
         // line 13
-        echo "    <h1>Les recettes de cuisine</h1>
+        echo "    <h1>Cuisine d'ici et d'ailleurs</h1>
 
     <hr>
+ 
 
     ";
-        // line 18
+        // line 19
         echo "    ";
         $this->displayBlock('esieablog_body', $context, $blocks);
-        // line 20
+        // line 21
         echo "
 ";
     }
 
-    // line 18
+    // line 19
     public function block_esieablog_body($context, array $blocks = array())
     {
-        // line 19
+        // line 20
         echo "    ";
     }
 
@@ -75,7 +76,7 @@ class __TwigTemplate_322dd6d8400e2330371fcb02e63ed38b033f546f92a748f77220385e960
 
     public function getDebugInfo()
     {
-        return array (  63 => 19,  60 => 18,  55 => 20,  52 => 18,  46 => 13,  43 => 11,  40 => 10,  33 => 7,  30 => 6,  11 => 4,);
+        return array (  64 => 20,  61 => 19,  56 => 21,  53 => 19,  46 => 13,  43 => 11,  40 => 10,  33 => 7,  30 => 6,  11 => 4,);
     }
 }
 /* {# src/Esiea/BlocBundle/Resources/views/layout.html.twig #}*/
@@ -89,10 +90,11 @@ class __TwigTemplate_322dd6d8400e2330371fcb02e63ed38b033f546f92a748f77220385e960
 /* */
 /* {% block body %}*/
 /* */
-/*     {# On définit un sous-titre commun à toutes les pages du bundle, par exemple #}*/
-/*     <h1>Les recettes de cuisine</h1>*/
+/*     {# sous-titre commun à toutes les pages #}*/
+/*     <h1>Cuisine d'ici et d'ailleurs</h1>*/
 /* */
 /*     <hr>*/
+/*  */
 /* */
 /*     {# On définit un nouveau bloc, que les vues du bundle pourront remplir #}*/
 /*     {% block esieablog_body %}*/

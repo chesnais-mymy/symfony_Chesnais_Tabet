@@ -47,14 +47,10 @@ class __TwigTemplate_ff879f02b57afd18b78b2b69605ce129350267f161ffab7ccd34807246f
         echo twig_include($this->env, $context, "EsieaBlogBundle:Advert:formulaire.html.twig");
         echo "
 
-  <p>
-    Vous éditez une annonce déjà existante, merci de ne pas changer
-    l'esprit générale de l'annonce déjà publiée.
-  </p>
 
   <p>
     <a href=\"";
-        // line 21
+        // line 17
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("esiea_blog_view", array("id" => $this->getAttribute((isset($context["advert"]) ? $context["advert"] : null), "id", array()))), "html", null, true);
         echo "\" class=\"btn btn-default\">
       <i class=\"glyphicon glyphicon-chevron-left\"></i>
@@ -62,7 +58,7 @@ class __TwigTemplate_ff879f02b57afd18b78b2b69605ce129350267f161ffab7ccd34807246f
     </a>
 
     <a href=\"";
-        // line 26
+        // line 22
         echo $this->env->getExtension('routing')->getPath("esiea_blog_home");
         echo "\" class=\"btn btn-default\">
       <i class=\"glyphicon glyphicon-chevron-left\"></i>
@@ -86,7 +82,7 @@ class __TwigTemplate_ff879f02b57afd18b78b2b69605ce129350267f161ffab7ccd34807246f
 
     public function getDebugInfo()
     {
-        return array (  66 => 26,  58 => 21,  47 => 13,  42 => 10,  39 => 9,  32 => 6,  29 => 5,  11 => 3,);
+        return array (  62 => 22,  54 => 17,  47 => 13,  42 => 10,  39 => 9,  32 => 6,  29 => 5,  11 => 3,);
     }
 }
 /* {# src/Esiea/BlogBundle/Resources/views/Advert/edit.html.twig #}*/
@@ -103,10 +99,6 @@ class __TwigTemplate_ff879f02b57afd18b78b2b69605ce129350267f161ffab7ccd34807246f
 /* */
 /*   {{ include("EsieaBlogBundle:Advert:formulaire.html.twig") }}*/
 /* */
-/*   <p>*/
-/*     Vous éditez une annonce déjà existante, merci de ne pas changer*/
-/*     l'esprit générale de l'annonce déjà publiée.*/
-/*   </p>*/
 /* */
 /*   <p>*/
 /*     <a href="{{ path('esiea_blog_view', {'id': advert.id}) }}" class="btn btn-default">*/

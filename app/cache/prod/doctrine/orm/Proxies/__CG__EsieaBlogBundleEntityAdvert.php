@@ -64,10 +64,10 @@ class Advert extends \Esiea\BlogBundle\Entity\Advert implements \Doctrine\ORM\Pr
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'id', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'titre', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'auteur', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'date', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'ingredients', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'preparation', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'image');
+            return array('__isInitialized__', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'id', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'titre', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'auteur', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'date', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'ingredients', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'preparation');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'id', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'titre', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'auteur', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'date', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'ingredients', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'preparation', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'image');
+        return array('__isInitialized__', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'id', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'titre', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'auteur', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'date', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'ingredients', '' . "\0" . 'Esiea\\BlogBundle\\Entity\\Advert' . "\0" . 'preparation');
     }
 
     /**
@@ -296,28 +296,6 @@ class Advert extends \Esiea\BlogBundle\Entity\Advert implements \Doctrine\ORM\Pr
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPreparation', array());
 
         return parent::getPreparation();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setImage($image)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setImage', array($image));
-
-        return parent::setImage($image);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getImage()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getImage', array());
-
-        return parent::getImage();
     }
 
 }

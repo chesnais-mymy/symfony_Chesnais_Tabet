@@ -15,8 +15,8 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7eb55853b75df2ea33c9ad9134097f4afe0f57f667c3ba46d65631177fbc1adf = $this->env->getExtension("native_profiler");
-        $__internal_7eb55853b75df2ea33c9ad9134097f4afe0f57f667c3ba46d65631177fbc1adf->enter($__internal_7eb55853b75df2ea33c9ad9134097f4afe0f57f667c3ba46d65631177fbc1adf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:formulaire.html.twig"));
+        $__internal_72682de9085ad5dff2c8adf641ad593d8568fed32ed62a66839cd26a19354569 = $this->env->getExtension("native_profiler");
+        $__internal_72682de9085ad5dff2c8adf641ad593d8568fed32ed62a66839cd26a19354569->enter($__internal_72682de9085ad5dff2c8adf641ad593d8568fed32ed62a66839cd26a19354569_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:formulaire.html.twig"));
 
         // line 2
         echo "
@@ -36,50 +36,73 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
 
   ";
         // line 12
-        echo "  ";
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "date", array()), 'row');
         echo "
+
+    <div class=\"form-group\">
+      ";
+        // line 15
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "date", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Date de mise en ligne"));
+        echo "
+      ";
+        // line 16
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "date", array()), 'errors');
+        echo "
+      <div class=\"col-sm-4\">
+        ";
+        // line 18
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "date", array()), 'widget', array("attr" => array("class" => "form-row")));
+        echo "
+      </div>
+    </div>
 
 
     <div class=\"form-group\">
       ";
-        // line 17
-        echo "      ";
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "titre", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Titre de l'annonce"));
+        // line 24
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "titre", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Titre de la recette"));
         echo "
-
       ";
-        // line 20
-        echo "      ";
+        // line 25
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "titre", array()), 'errors');
         echo "
-
       <div class=\"col-sm-4\">
         ";
-        // line 24
-        echo "        ";
+        // line 27
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "titre", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
       </div>
     </div>
 
-\t";
-        // line 28
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "auteur", array()), 'row');
+        <div class=\"form-group\">
+      ";
+        // line 32
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "auteur", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Auteur de la recette"));
         echo "
+      ";
+        // line 33
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "auteur", array()), 'errors');
+        echo "
+      <div class=\"col-sm-4\">
+        ";
+        // line 35
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "auteur", array()), 'widget', array("attr" => array("class" => "form-control")));
+        echo "
+      </div>
+    </div>
+
 
     <div class=\"form-group\">
       ";
-        // line 31
+        // line 41
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "ingredients", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Ingrédients de la recette"));
         echo "
       ";
-        // line 32
+        // line 42
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "titre", array()), 'errors');
         echo "
       <div class=\"col-sm-4\">
         ";
-        // line 34
+        // line 44
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "ingredients", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
       </div>
@@ -87,47 +110,45 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
 
     <div class=\"form-group\">
       ";
-        // line 39
+        // line 49
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "preparation", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Préparation de la recette"));
         echo "
       ";
-        // line 40
+        // line 50
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "titre", array()), 'errors');
         echo "
       <div class=\"col-sm-4\">
         ";
-        // line 42
+        // line 52
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "preparation", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
       </div>
     </div>
 
-";
-        // line 46
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "image", array()), 'row');
+
+<div class=\"form-group\">
+  ";
+        // line 58
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "save", array()), 'widget', array("attr" => array("class" => "btn btn-deuxieme")));
         echo "
+  </div>
+
+  <p3> Attention : cette annonce sera ajoutée directement sur la page d'accueil après validation du formulaire. </p3>
 
   ";
-        // line 49
-        echo "  ";
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "save", array()), 'widget', array("attr" => array("class" => "btn btn-primary")));
-        echo "
-
-  ";
-        // line 54
-        echo "  ";
+        // line 63
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'rest');
         echo "
   
   ";
-        // line 57
+        // line 66
         echo "  ";
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
 </div>
 ";
         
-        $__internal_7eb55853b75df2ea33c9ad9134097f4afe0f57f667c3ba46d65631177fbc1adf->leave($__internal_7eb55853b75df2ea33c9ad9134097f4afe0f57f667c3ba46d65631177fbc1adf_prof);
+        $__internal_72682de9085ad5dff2c8adf641ad593d8568fed32ed62a66839cd26a19354569->leave($__internal_72682de9085ad5dff2c8adf641ad593d8568fed32ed62a66839cd26a19354569_prof);
 
     }
 
@@ -143,7 +164,7 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
 
     public function getDebugInfo()
     {
-        return array (  124 => 57,  118 => 54,  112 => 49,  107 => 46,  100 => 42,  95 => 40,  91 => 39,  83 => 34,  78 => 32,  74 => 31,  68 => 28,  60 => 24,  53 => 20,  47 => 17,  39 => 12,  33 => 9,  28 => 6,  22 => 2,);
+        return array (  145 => 66,  140 => 63,  132 => 58,  123 => 52,  118 => 50,  114 => 49,  106 => 44,  101 => 42,  97 => 41,  88 => 35,  83 => 33,  79 => 32,  71 => 27,  66 => 25,  62 => 24,  53 => 18,  48 => 16,  44 => 15,  39 => 12,  33 => 9,  28 => 6,  22 => 2,);
     }
 }
 /* {# src/Esiea/BlogBundle/Resources/views/Advert/formulaire.html.twig #}*/
@@ -157,23 +178,33 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
 /*     {{ form_errors(form) }}*/
 /* */
 /*   {# Génération du label + error + widget pour un champ #}*/
-/*   {{ form_row(form.date) }}*/
 /* */
 /* */
 /*     <div class="form-group">*/
-/*       {# Génération du label. #}*/
-/*       {{ form_label(form.titre, "Titre de l'annonce", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
-/* */
-/*       {# Affichage des erreurs pour ce champ précis. #}*/
-/*       {{ form_errors(form.titre) }}*/
-/* */
+/*       {{ form_label(form.date, "Date de mise en ligne", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
+/*       {{ form_errors(form.date) }}*/
 /*       <div class="col-sm-4">*/
-/*         {# Génération de l'input. #}*/
+/*         {{ form_widget(form.date, {'attr': {'class': 'form-row'}}) }}*/
+/*       </div>*/
+/*     </div>*/
+/* */
+/* */
+/*     <div class="form-group">*/
+/*       {{ form_label(form.titre, "Titre de la recette", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
+/*       {{ form_errors(form.titre) }}*/
+/*       <div class="col-sm-4">*/
 /*         {{ form_widget(form.titre, {'attr': {'class': 'form-control'}}) }}*/
 /*       </div>*/
 /*     </div>*/
 /* */
-/* 	{{ form_row(form.auteur) }}*/
+/*         <div class="form-group">*/
+/*       {{ form_label(form.auteur, "Auteur de la recette", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
+/*       {{ form_errors(form.auteur) }}*/
+/*       <div class="col-sm-4">*/
+/*         {{ form_widget(form.auteur, {'attr': {'class': 'form-control'}}) }}*/
+/*       </div>*/
+/*     </div>*/
+/* */
 /* */
 /*     <div class="form-group">*/
 /*       {{ form_label(form.ingredients, "Ingrédients de la recette", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
@@ -191,14 +222,13 @@ class __TwigTemplate_2d444963dd4fb96cc9bf467b4c3e8d43a38abb7813e92d76d224bfc1e7a
 /*       </div>*/
 /*     </div>*/
 /* */
-/* {{ form_row(form.image) }}*/
 /* */
-/*   {# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}*/
-/*   {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}*/
+/* <div class="form-group">*/
+/*   {{ form_widget(form.save, {'attr': {'class': 'btn btn-deuxieme'}}) }}*/
+/*   </div>*/
 /* */
-/*   {# Génération automatique des champs pas encore écrits.*/
-/*      Dans cet exemple, ce serait le champ CSRF (géré automatiquement par Symfony !)*/
-/*      et tous les champs cachés (type « hidden »). #}*/
+/*   <p3> Attention : cette annonce sera ajoutée directement sur la page d'accueil après validation du formulaire. </p3>*/
+/* */
 /*   {{ form_rest(form) }}*/
 /*   */
 /*   {# Fermeture de la balise <form> du formulaire HTML #}*/

@@ -22,20 +22,20 @@ class __TwigTemplate_2b32ca0c5883d57db79b75a6a5ac4c3c53eaa1044e7a9198b4b9270f7a2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7a4332d6204a77b6686ba412bb2ad99614fde6cb7b2fc4d2e38d42e7ba0f1c96 = $this->env->getExtension("native_profiler");
-        $__internal_7a4332d6204a77b6686ba412bb2ad99614fde6cb7b2fc4d2e38d42e7ba0f1c96->enter($__internal_7a4332d6204a77b6686ba412bb2ad99614fde6cb7b2fc4d2e38d42e7ba0f1c96_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:edit.html.twig"));
+        $__internal_1961bf09e5713333d840ccbe70ab7aa49c1961379ac1daa01c08a0a5f3eceb2e = $this->env->getExtension("native_profiler");
+        $__internal_1961bf09e5713333d840ccbe70ab7aa49c1961379ac1daa01c08a0a5f3eceb2e->enter($__internal_1961bf09e5713333d840ccbe70ab7aa49c1961379ac1daa01c08a0a5f3eceb2e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EsieaBlogBundle:Advert:edit.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_7a4332d6204a77b6686ba412bb2ad99614fde6cb7b2fc4d2e38d42e7ba0f1c96->leave($__internal_7a4332d6204a77b6686ba412bb2ad99614fde6cb7b2fc4d2e38d42e7ba0f1c96_prof);
+        $__internal_1961bf09e5713333d840ccbe70ab7aa49c1961379ac1daa01c08a0a5f3eceb2e->leave($__internal_1961bf09e5713333d840ccbe70ab7aa49c1961379ac1daa01c08a0a5f3eceb2e_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_dcd4469e96769fc6aa63f0ca3c310b6b45452485ddcb80166f7769e2b6d6f893 = $this->env->getExtension("native_profiler");
-        $__internal_dcd4469e96769fc6aa63f0ca3c310b6b45452485ddcb80166f7769e2b6d6f893->enter($__internal_dcd4469e96769fc6aa63f0ca3c310b6b45452485ddcb80166f7769e2b6d6f893_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_736aea906dd5f461e89945b2bbdf51e268834e3d8585813d4ff3a34429168d22 = $this->env->getExtension("native_profiler");
+        $__internal_736aea906dd5f461e89945b2bbdf51e268834e3d8585813d4ff3a34429168d22->enter($__internal_736aea906dd5f461e89945b2bbdf51e268834e3d8585813d4ff3a34429168d22_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 6
         echo "  Modifier une recette - ";
@@ -43,15 +43,15 @@ class __TwigTemplate_2b32ca0c5883d57db79b75a6a5ac4c3c53eaa1044e7a9198b4b9270f7a2
         echo "
 ";
         
-        $__internal_dcd4469e96769fc6aa63f0ca3c310b6b45452485ddcb80166f7769e2b6d6f893->leave($__internal_dcd4469e96769fc6aa63f0ca3c310b6b45452485ddcb80166f7769e2b6d6f893_prof);
+        $__internal_736aea906dd5f461e89945b2bbdf51e268834e3d8585813d4ff3a34429168d22->leave($__internal_736aea906dd5f461e89945b2bbdf51e268834e3d8585813d4ff3a34429168d22_prof);
 
     }
 
     // line 9
     public function block_esieablog_body($context, array $blocks = array())
     {
-        $__internal_460063827e84f0a617ffc773d75c8e4862aab853335f9bbb87d95e4d8765cb17 = $this->env->getExtension("native_profiler");
-        $__internal_460063827e84f0a617ffc773d75c8e4862aab853335f9bbb87d95e4d8765cb17->enter($__internal_460063827e84f0a617ffc773d75c8e4862aab853335f9bbb87d95e4d8765cb17_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "esieablog_body"));
+        $__internal_e1c0bde88e6c9afe326f9cec27a850eb85f242772a0d8c6e8e6866ec0aa02656 = $this->env->getExtension("native_profiler");
+        $__internal_e1c0bde88e6c9afe326f9cec27a850eb85f242772a0d8c6e8e6866ec0aa02656->enter($__internal_e1c0bde88e6c9afe326f9cec27a850eb85f242772a0d8c6e8e6866ec0aa02656_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "esieablog_body"));
 
         // line 10
         echo "
@@ -62,14 +62,10 @@ class __TwigTemplate_2b32ca0c5883d57db79b75a6a5ac4c3c53eaa1044e7a9198b4b9270f7a2
         echo twig_include($this->env, $context, "EsieaBlogBundle:Advert:formulaire.html.twig");
         echo "
 
-  <p>
-    Vous éditez une annonce déjà existante, merci de ne pas changer
-    l'esprit générale de l'annonce déjà publiée.
-  </p>
 
   <p>
     <a href=\"";
-        // line 21
+        // line 17
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("esiea_blog_view", array("id" => $this->getAttribute((isset($context["advert"]) ? $context["advert"] : $this->getContext($context, "advert")), "id", array()))), "html", null, true);
         echo "\" class=\"btn btn-default\">
       <i class=\"glyphicon glyphicon-chevron-left\"></i>
@@ -77,7 +73,7 @@ class __TwigTemplate_2b32ca0c5883d57db79b75a6a5ac4c3c53eaa1044e7a9198b4b9270f7a2
     </a>
 
     <a href=\"";
-        // line 26
+        // line 22
         echo $this->env->getExtension('routing')->getPath("esiea_blog_home");
         echo "\" class=\"btn btn-default\">
       <i class=\"glyphicon glyphicon-chevron-left\"></i>
@@ -88,7 +84,7 @@ class __TwigTemplate_2b32ca0c5883d57db79b75a6a5ac4c3c53eaa1044e7a9198b4b9270f7a2
 
 ";
         
-        $__internal_460063827e84f0a617ffc773d75c8e4862aab853335f9bbb87d95e4d8765cb17->leave($__internal_460063827e84f0a617ffc773d75c8e4862aab853335f9bbb87d95e4d8765cb17_prof);
+        $__internal_e1c0bde88e6c9afe326f9cec27a850eb85f242772a0d8c6e8e6866ec0aa02656->leave($__internal_e1c0bde88e6c9afe326f9cec27a850eb85f242772a0d8c6e8e6866ec0aa02656_prof);
 
     }
 
@@ -104,7 +100,7 @@ class __TwigTemplate_2b32ca0c5883d57db79b75a6a5ac4c3c53eaa1044e7a9198b4b9270f7a2
 
     public function getDebugInfo()
     {
-        return array (  81 => 26,  73 => 21,  62 => 13,  57 => 10,  51 => 9,  41 => 6,  35 => 5,  11 => 3,);
+        return array (  77 => 22,  69 => 17,  62 => 13,  57 => 10,  51 => 9,  41 => 6,  35 => 5,  11 => 3,);
     }
 }
 /* {# src/Esiea/BlogBundle/Resources/views/Advert/edit.html.twig #}*/
@@ -121,10 +117,6 @@ class __TwigTemplate_2b32ca0c5883d57db79b75a6a5ac4c3c53eaa1044e7a9198b4b9270f7a2
 /* */
 /*   {{ include("EsieaBlogBundle:Advert:formulaire.html.twig") }}*/
 /* */
-/*   <p>*/
-/*     Vous éditez une annonce déjà existante, merci de ne pas changer*/
-/*     l'esprit générale de l'annonce déjà publiée.*/
-/*   </p>*/
 /* */
 /*   <p>*/
 /*     <a href="{{ path('esiea_blog_view', {'id': advert.id}) }}" class="btn btn-default">*/

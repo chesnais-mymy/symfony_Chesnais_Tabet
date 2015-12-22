@@ -33,50 +33,73 @@ class __TwigTemplate_1b5bf52572075a0ed3e25193f7d019aa30f8cb0b5588c6e9589eb9064d6
 
   ";
         // line 12
-        echo "  ";
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "date", array()), 'row');
         echo "
+
+    <div class=\"form-group\">
+      ";
+        // line 15
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "date", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Date de mise en ligne"));
+        echo "
+      ";
+        // line 16
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "date", array()), 'errors');
+        echo "
+      <div class=\"col-sm-4\">
+        ";
+        // line 18
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "date", array()), 'widget', array("attr" => array("class" => "form-row")));
+        echo "
+      </div>
+    </div>
 
 
     <div class=\"form-group\">
       ";
-        // line 17
-        echo "      ";
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "titre", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Titre de l'annonce"));
+        // line 24
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "titre", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Titre de la recette"));
         echo "
-
       ";
-        // line 20
-        echo "      ";
+        // line 25
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "titre", array()), 'errors');
         echo "
-
       <div class=\"col-sm-4\">
         ";
-        // line 24
-        echo "        ";
+        // line 27
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "titre", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
       </div>
     </div>
 
-\t";
-        // line 28
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "auteur", array()), 'row');
+        <div class=\"form-group\">
+      ";
+        // line 32
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "auteur", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Auteur de la recette"));
         echo "
+      ";
+        // line 33
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "auteur", array()), 'errors');
+        echo "
+      <div class=\"col-sm-4\">
+        ";
+        // line 35
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "auteur", array()), 'widget', array("attr" => array("class" => "form-control")));
+        echo "
+      </div>
+    </div>
+
 
     <div class=\"form-group\">
       ";
-        // line 31
+        // line 41
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "ingredients", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Ingrédients de la recette"));
         echo "
       ";
-        // line 32
+        // line 42
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "titre", array()), 'errors');
         echo "
       <div class=\"col-sm-4\">
         ";
-        // line 34
+        // line 44
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "ingredients", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
       </div>
@@ -84,40 +107,38 @@ class __TwigTemplate_1b5bf52572075a0ed3e25193f7d019aa30f8cb0b5588c6e9589eb9064d6
 
     <div class=\"form-group\">
       ";
-        // line 39
+        // line 49
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "preparation", array()), 'label', array("label_attr" => array("class" => "col-sm-3 control-label"), "label" => "Préparation de la recette"));
         echo "
       ";
-        // line 40
+        // line 50
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "titre", array()), 'errors');
         echo "
       <div class=\"col-sm-4\">
         ";
-        // line 42
+        // line 52
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "preparation", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
       </div>
     </div>
 
-";
-        // line 46
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "image", array()), 'row');
+
+<div class=\"form-group\">
+  ";
+        // line 58
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "save", array()), 'widget', array("attr" => array("class" => "btn btn-deuxieme")));
         echo "
+  </div>
+
+  <p3> Attention : cette annonce sera ajoutée directement sur la page d'accueil après validation du formulaire. </p3>
 
   ";
-        // line 49
-        echo "  ";
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : null), "save", array()), 'widget', array("attr" => array("class" => "btn btn-primary")));
-        echo "
-
-  ";
-        // line 54
-        echo "  ";
+        // line 63
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : null), 'rest');
         echo "
   
   ";
-        // line 57
+        // line 66
         echo "  ";
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : null), 'form_end');
         echo "
@@ -137,7 +158,7 @@ class __TwigTemplate_1b5bf52572075a0ed3e25193f7d019aa30f8cb0b5588c6e9589eb9064d6
 
     public function getDebugInfo()
     {
-        return array (  121 => 57,  115 => 54,  109 => 49,  104 => 46,  97 => 42,  92 => 40,  88 => 39,  80 => 34,  75 => 32,  71 => 31,  65 => 28,  57 => 24,  50 => 20,  44 => 17,  36 => 12,  30 => 9,  25 => 6,  19 => 2,);
+        return array (  142 => 66,  137 => 63,  129 => 58,  120 => 52,  115 => 50,  111 => 49,  103 => 44,  98 => 42,  94 => 41,  85 => 35,  80 => 33,  76 => 32,  68 => 27,  63 => 25,  59 => 24,  50 => 18,  45 => 16,  41 => 15,  36 => 12,  30 => 9,  25 => 6,  19 => 2,);
     }
 }
 /* {# src/Esiea/BlogBundle/Resources/views/Advert/formulaire.html.twig #}*/
@@ -151,23 +172,33 @@ class __TwigTemplate_1b5bf52572075a0ed3e25193f7d019aa30f8cb0b5588c6e9589eb9064d6
 /*     {{ form_errors(form) }}*/
 /* */
 /*   {# Génération du label + error + widget pour un champ #}*/
-/*   {{ form_row(form.date) }}*/
 /* */
 /* */
 /*     <div class="form-group">*/
-/*       {# Génération du label. #}*/
-/*       {{ form_label(form.titre, "Titre de l'annonce", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
-/* */
-/*       {# Affichage des erreurs pour ce champ précis. #}*/
-/*       {{ form_errors(form.titre) }}*/
-/* */
+/*       {{ form_label(form.date, "Date de mise en ligne", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
+/*       {{ form_errors(form.date) }}*/
 /*       <div class="col-sm-4">*/
-/*         {# Génération de l'input. #}*/
+/*         {{ form_widget(form.date, {'attr': {'class': 'form-row'}}) }}*/
+/*       </div>*/
+/*     </div>*/
+/* */
+/* */
+/*     <div class="form-group">*/
+/*       {{ form_label(form.titre, "Titre de la recette", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
+/*       {{ form_errors(form.titre) }}*/
+/*       <div class="col-sm-4">*/
 /*         {{ form_widget(form.titre, {'attr': {'class': 'form-control'}}) }}*/
 /*       </div>*/
 /*     </div>*/
 /* */
-/* 	{{ form_row(form.auteur) }}*/
+/*         <div class="form-group">*/
+/*       {{ form_label(form.auteur, "Auteur de la recette", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
+/*       {{ form_errors(form.auteur) }}*/
+/*       <div class="col-sm-4">*/
+/*         {{ form_widget(form.auteur, {'attr': {'class': 'form-control'}}) }}*/
+/*       </div>*/
+/*     </div>*/
+/* */
 /* */
 /*     <div class="form-group">*/
 /*       {{ form_label(form.ingredients, "Ingrédients de la recette", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}*/
@@ -185,14 +216,13 @@ class __TwigTemplate_1b5bf52572075a0ed3e25193f7d019aa30f8cb0b5588c6e9589eb9064d6
 /*       </div>*/
 /*     </div>*/
 /* */
-/* {{ form_row(form.image) }}*/
 /* */
-/*   {# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}*/
-/*   {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}*/
+/* <div class="form-group">*/
+/*   {{ form_widget(form.save, {'attr': {'class': 'btn btn-deuxieme'}}) }}*/
+/*   </div>*/
 /* */
-/*   {# Génération automatique des champs pas encore écrits.*/
-/*      Dans cet exemple, ce serait le champ CSRF (géré automatiquement par Symfony !)*/
-/*      et tous les champs cachés (type « hidden »). #}*/
+/*   <p3> Attention : cette annonce sera ajoutée directement sur la page d'accueil après validation du formulaire. </p3>*/
+/* */
 /*   {{ form_rest(form) }}*/
 /*   */
 /*   {# Fermeture de la balise <form> du formulaire HTML #}*/

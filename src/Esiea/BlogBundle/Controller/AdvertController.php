@@ -109,7 +109,6 @@ $formBuilder = $this->get('form.factory')->createBuilder('form', $advert);
         ->add('auteur',    'text')
         ->add('ingredients', 'textarea')
         ->add('preparation',   'textarea')
-        ->add('image', 'text')
         ->add('save', 'submit')
         ->getForm()
         
@@ -168,7 +167,6 @@ $formBuilder = $this->get('form.factory')->createBuilder('form', $advert);
         ->add('auteur',    'text')
         ->add('ingredients', 'textarea')
         ->add('preparation',   'textarea')
-        ->add('image', 'text')
         ->add('save', 'submit')
         ->getForm()
         

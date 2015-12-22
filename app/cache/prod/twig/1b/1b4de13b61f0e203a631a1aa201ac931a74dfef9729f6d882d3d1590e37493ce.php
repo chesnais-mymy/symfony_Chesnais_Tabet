@@ -38,7 +38,7 @@ class __TwigTemplate_e702da3f20bc716bdb8fe21334733787752f390b0e3308898cc50abb716
     {
         // line 9
         echo "
-    <h2>Liste des annonces</h2>
+    <h2>Liste des recettes</h2>
 
     <ul>
         ";
@@ -72,7 +72,7 @@ class __TwigTemplate_e702da3f20bc716bdb8fe21334733787752f390b0e3308898cc50abb716
         }
         if (!$context['_iterated']) {
             // line 22
-            echo "            <li>Pas (encore !) d'annonces</li>
+            echo "            <li>Aucune annonce de recette</li>
         ";
         }
         $_parent = $context['_parent'];
@@ -110,7 +110,7 @@ class __TwigTemplate_e702da3f20bc716bdb8fe21334733787752f390b0e3308898cc50abb716
 /* */
 /* {% block esieablog_body %}*/
 /* */
-/*     <h2>Liste des annonces</h2>*/
+/*     <h2>Liste des recettes</h2>*/
 /* */
 /*     <ul>*/
 /*         {% for advert in listAdverts %}*/
@@ -122,7 +122,7 @@ class __TwigTemplate_e702da3f20bc716bdb8fe21334733787752f390b0e3308898cc50abb716
 /*                 le {{ advert.date|date('d/m/Y') }}*/
 /*             </li>*/
 /*         {% else %}*/
-/*             <li>Pas (encore !) d'annonces</li>*/
+/*             <li>Aucune annonce de recette</li>*/
 /*         {% endfor %}*/
 /*     </ul>*/
 /* */
