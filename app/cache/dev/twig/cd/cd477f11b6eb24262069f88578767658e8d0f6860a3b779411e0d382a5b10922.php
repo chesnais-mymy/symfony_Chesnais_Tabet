@@ -19,8 +19,8 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_909bb15e68acab3d534420a21768d2f5309a48c0e29778f37f54e4cc9ba00e3f = $this->env->getExtension("native_profiler");
-        $__internal_909bb15e68acab3d534420a21768d2f5309a48c0e29778f37f54e4cc9ba00e3f->enter($__internal_909bb15e68acab3d534420a21768d2f5309a48c0e29778f37f54e4cc9ba00e3f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::layout.html.twig"));
+        $__internal_9bcce2b0fa596f413512ae971c5eaef3d1a410d2dee3bec061798714921e3799 = $this->env->getExtension("native_profiler");
+        $__internal_9bcce2b0fa596f413512ae971c5eaef3d1a410d2dee3bec061798714921e3799->enter($__internal_9bcce2b0fa596f413512ae971c5eaef3d1a410d2dee3bec061798714921e3799_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "::layout.html.twig"));
 
         // line 2
         echo "
@@ -38,7 +38,7 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
     ";
         // line 11
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 15
+        // line 16
         echo "</head>
 
 <body>
@@ -55,108 +55,110 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
         </p>
     </div>
 
+
     <div class=\"row\">
-        <div id=\"menu\" class=\"col-md-3\">
+        <div id=\"menu\" class=\"col-md-4\">
             <h3>Menu principal</h3>
             <ul class=\"nav nav-pills nav-stacked\">
                 <li><a href=\"";
-        // line 35
+        // line 37
         echo $this->env->getExtension('routing')->getPath("esiea_blog_home");
         echo "\">Accueil</a></li>
                 <li><a href=\"";
-        // line 36
+        // line 38
         echo $this->env->getExtension('routing')->getPath("esiea_blog_add");
         echo "\">Ajouter une nouvelle recette</a></li>
             </ul>
 
             <h4>Les dernières recettes</h4>
             ";
-        // line 40
+        // line 42
         echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("EsieaBlogBundle:Advert:menu", array("limit" => 4)));
         echo "
         </div>
-        <div id=\"content\" class=\"col-md-9\">
+
+        <div id=\"preparation\" class=\"col-md-8\">
             ";
-        // line 43
+        // line 46
         $this->displayBlock('body', $context, $blocks);
-        // line 45
+        // line 49
         echo "        </div>
     </div>
 
     <hr>
 
     <footer>
-        <p>Copyright: Chesnais et Tabet</p>
+        <p>Copyright: Chesnais Myriam et Tabet Hafida</p>
     </footer>
 </div>
 
 ";
-        // line 55
+        // line 59
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 60
+        // line 63
         echo "
 </body>
 </html>";
         
-        $__internal_909bb15e68acab3d534420a21768d2f5309a48c0e29778f37f54e4cc9ba00e3f->leave($__internal_909bb15e68acab3d534420a21768d2f5309a48c0e29778f37f54e4cc9ba00e3f_prof);
+        $__internal_9bcce2b0fa596f413512ae971c5eaef3d1a410d2dee3bec061798714921e3799->leave($__internal_9bcce2b0fa596f413512ae971c5eaef3d1a410d2dee3bec061798714921e3799_prof);
 
     }
 
     // line 9
     public function block_title($context, array $blocks = array())
     {
-        $__internal_38cfbfaf04002001bba81ce8df65ec5c35b413787dc856e5d4ba8582ef7f8639 = $this->env->getExtension("native_profiler");
-        $__internal_38cfbfaf04002001bba81ce8df65ec5c35b413787dc856e5d4ba8582ef7f8639->enter($__internal_38cfbfaf04002001bba81ce8df65ec5c35b413787dc856e5d4ba8582ef7f8639_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_7c23ed61c0befc0fa8a062960b49c4054bd4152ecc31b874b5386f597e39a56b = $this->env->getExtension("native_profiler");
+        $__internal_7c23ed61c0befc0fa8a062960b49c4054bd4152ecc31b874b5386f597e39a56b->enter($__internal_7c23ed61c0befc0fa8a062960b49c4054bd4152ecc31b874b5386f597e39a56b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Le blog de Cuisine de Myriam et hafida";
         
-        $__internal_38cfbfaf04002001bba81ce8df65ec5c35b413787dc856e5d4ba8582ef7f8639->leave($__internal_38cfbfaf04002001bba81ce8df65ec5c35b413787dc856e5d4ba8582ef7f8639_prof);
+        $__internal_7c23ed61c0befc0fa8a062960b49c4054bd4152ecc31b874b5386f597e39a56b->leave($__internal_7c23ed61c0befc0fa8a062960b49c4054bd4152ecc31b874b5386f597e39a56b_prof);
 
     }
 
     // line 11
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_edf3bf0563bbf76ed306e7182afa25617a0bc15b60bbe5a60f63045dd51e6fae = $this->env->getExtension("native_profiler");
-        $__internal_edf3bf0563bbf76ed306e7182afa25617a0bc15b60bbe5a60f63045dd51e6fae->enter($__internal_edf3bf0563bbf76ed306e7182afa25617a0bc15b60bbe5a60f63045dd51e6fae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_dfd16cdf5ec90cfbaffa2a1a29fe52f0ced5eb1158cb8eadaf7a8c64fc1c994a = $this->env->getExtension("native_profiler");
+        $__internal_dfd16cdf5ec90cfbaffa2a1a29fe52f0ced5eb1158cb8eadaf7a8c64fc1c994a->enter($__internal_dfd16cdf5ec90cfbaffa2a1a29fe52f0ced5eb1158cb8eadaf7a8c64fc1c994a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 12
         echo "        ";
         // line 13
-        echo "        <link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css\">
+        echo "        <link rel=\"stylesheet\" href=\"/css/bootstrap.min.css\">
+        <link rel=\"stylesheet\" href=\"/css/originalite.css\">
     ";
         
-        $__internal_edf3bf0563bbf76ed306e7182afa25617a0bc15b60bbe5a60f63045dd51e6fae->leave($__internal_edf3bf0563bbf76ed306e7182afa25617a0bc15b60bbe5a60f63045dd51e6fae_prof);
+        $__internal_dfd16cdf5ec90cfbaffa2a1a29fe52f0ced5eb1158cb8eadaf7a8c64fc1c994a->leave($__internal_dfd16cdf5ec90cfbaffa2a1a29fe52f0ced5eb1158cb8eadaf7a8c64fc1c994a_prof);
 
     }
 
-    // line 43
+    // line 46
     public function block_body($context, array $blocks = array())
     {
-        $__internal_d4c0dafd7ed39fa2e4708bae83d1dfb112cffa3712f75315267fbab2b3eefd08 = $this->env->getExtension("native_profiler");
-        $__internal_d4c0dafd7ed39fa2e4708bae83d1dfb112cffa3712f75315267fbab2b3eefd08->enter($__internal_d4c0dafd7ed39fa2e4708bae83d1dfb112cffa3712f75315267fbab2b3eefd08_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_1b4ed2ba9403c890813f5e633c91fc7b127e55f0a279a2dfe10cc3c47265685d = $this->env->getExtension("native_profiler");
+        $__internal_1b4ed2ba9403c890813f5e633c91fc7b127e55f0a279a2dfe10cc3c47265685d->enter($__internal_1b4ed2ba9403c890813f5e633c91fc7b127e55f0a279a2dfe10cc3c47265685d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 44
-        echo "            ";
+        // line 47
+        echo "
+            ";
         
-        $__internal_d4c0dafd7ed39fa2e4708bae83d1dfb112cffa3712f75315267fbab2b3eefd08->leave($__internal_d4c0dafd7ed39fa2e4708bae83d1dfb112cffa3712f75315267fbab2b3eefd08_prof);
+        $__internal_1b4ed2ba9403c890813f5e633c91fc7b127e55f0a279a2dfe10cc3c47265685d->leave($__internal_1b4ed2ba9403c890813f5e633c91fc7b127e55f0a279a2dfe10cc3c47265685d_prof);
 
     }
 
-    // line 55
+    // line 59
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_422ce1fee0d46dc4a00c0d930fcd8948b37e9cbfdd8733737ff80c6be7a1bea5 = $this->env->getExtension("native_profiler");
-        $__internal_422ce1fee0d46dc4a00c0d930fcd8948b37e9cbfdd8733737ff80c6be7a1bea5->enter($__internal_422ce1fee0d46dc4a00c0d930fcd8948b37e9cbfdd8733737ff80c6be7a1bea5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_7d7fe4fbad16fc74d61b3a75985784ab15e6b6f61739f27d13330271aa1322a3 = $this->env->getExtension("native_profiler");
+        $__internal_7d7fe4fbad16fc74d61b3a75985784ab15e6b6f61739f27d13330271aa1322a3->enter($__internal_7d7fe4fbad16fc74d61b3a75985784ab15e6b6f61739f27d13330271aa1322a3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 56
-        echo "    ";
-        // line 57
+        // line 60
         echo "    <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>
     <script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js\"></script>
 ";
         
-        $__internal_422ce1fee0d46dc4a00c0d930fcd8948b37e9cbfdd8733737ff80c6be7a1bea5->leave($__internal_422ce1fee0d46dc4a00c0d930fcd8948b37e9cbfdd8733737ff80c6be7a1bea5_prof);
+        $__internal_7d7fe4fbad16fc74d61b3a75985784ab15e6b6f61739f27d13330271aa1322a3->leave($__internal_7d7fe4fbad16fc74d61b3a75985784ab15e6b6f61739f27d13330271aa1322a3_prof);
 
     }
 
@@ -172,7 +174,7 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
 
     public function getDebugInfo()
     {
-        return array (  155 => 57,  153 => 56,  147 => 55,  140 => 44,  134 => 43,  126 => 13,  124 => 12,  118 => 11,  106 => 9,  97 => 60,  95 => 55,  83 => 45,  81 => 43,  75 => 40,  68 => 36,  64 => 35,  42 => 15,  40 => 11,  35 => 9,  26 => 2,);
+        return array (  157 => 60,  151 => 59,  143 => 47,  137 => 46,  128 => 13,  126 => 12,  120 => 11,  108 => 9,  99 => 63,  97 => 59,  85 => 49,  83 => 46,  76 => 42,  69 => 38,  65 => 37,  42 => 16,  40 => 11,  35 => 9,  26 => 2,);
     }
 }
 /* {# app/Resources/views/layout.html.twig #}*/
@@ -187,7 +189,8 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
 /* */
 /*     {% block stylesheets %}*/
 /*         {# On charge le CSS de bootstrap depuis le site directement #}*/
-/*         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">*/
+/*         <link rel="stylesheet" href="/css/bootstrap.min.css">*/
+/*         <link rel="stylesheet" href="/css/originalite.css">*/
 /*     {% endblock %}*/
 /* </head>*/
 /* */
@@ -205,8 +208,9 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
 /*         </p>*/
 /*     </div>*/
 /* */
+/* */
 /*     <div class="row">*/
-/*         <div id="menu" class="col-md-3">*/
+/*         <div id="menu" class="col-md-4">*/
 /*             <h3>Menu principal</h3>*/
 /*             <ul class="nav nav-pills nav-stacked">*/
 /*                 <li><a href="{{ path('esiea_blog_home') }}">Accueil</a></li>*/
@@ -216,8 +220,10 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
 /*             <h4>Les dernières recettes</h4>*/
 /*             {{ render(controller("EsieaBlogBundle:Advert:menu", {'limit': 4})) }}*/
 /*         </div>*/
-/*         <div id="content" class="col-md-9">*/
+/* */
+/*         <div id="preparation" class="col-md-8">*/
 /*             {% block body %}*/
+/* */
 /*             {% endblock %}*/
 /*         </div>*/
 /*     </div>*/
@@ -225,12 +231,11 @@ class __TwigTemplate_3d71d3da159933a85c3f3364466bba8057127a0e5139d478f07e27da93f
 /*     <hr>*/
 /* */
 /*     <footer>*/
-/*         <p>Copyright: Chesnais et Tabet</p>*/
+/*         <p>Copyright: Chesnais Myriam et Tabet Hafida</p>*/
 /*     </footer>*/
 /* </div>*/
 /* */
 /* {% block javascripts %}*/
-/*     {# Ajoutez ces lignes JavaScript si vous comptez vous servir des fonctionnalités du bootstrap Twitter #}*/
 /*     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>*/
 /*     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>*/
 /* {% endblock %}*/
