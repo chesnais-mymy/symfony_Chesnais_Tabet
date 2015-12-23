@@ -42,3 +42,7 @@ eb97f0,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450820838,,200
 c7124e,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine/add,1450821010,,200
 4a8064,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450821014,977f0c,200
 977f0c,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450821014,,200
+86908e,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450835048,70a50e,200
+70a50e,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450835048,,200
+1620b7,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450841626,2fd780,200
+2fd780,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450841626,,200
