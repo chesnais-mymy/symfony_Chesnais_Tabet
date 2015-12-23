@@ -18,3 +18,13 @@ b7176f,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_loc
 3a9641,127.0.0.1,GET,http://127.0.0.1:8000/1,1450886136,,200
 022889,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450886153,1424e7,200
 1424e7,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450886153,,200
+114389,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450886217,6400aa,200
+6400aa,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450886217,,200
+9620d5,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450886220,f2b384,200
+f2b384,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450886220,,200
+e5e408,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450886221,d63a3a,200
+d63a3a,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine/add,1450886221,,200
+bc7e2f,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450886224,8a79ab,200
+8a79ab,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine/advert/14,1450886224,,200
+e89f9c,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450886228,15bbd2,200
+15bbd2,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450886228,,200

@@ -1,10 +1,10 @@
 # This file is auto-generated during the composer install
 parameters:
-    database_host: 127.0.0.1
+    database_host: mysql.hostinger.fr
     database_port: null
-    database_name: blogHC
-    database_user: root
-    database_password: dqcqdjw1=
+    database_name: u760011354_blogc
+    database_user: u760011354_hafid
+    database_password: yuyu2808
     mailer_transport: mail
     mailer_host: 127.0.0.1
     mailer_user: null
