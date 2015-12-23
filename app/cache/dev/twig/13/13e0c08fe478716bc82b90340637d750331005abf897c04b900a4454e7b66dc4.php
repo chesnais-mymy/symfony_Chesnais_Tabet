@@ -1,6 +1,6 @@
 <?php
 
-/* @WebProfiler/Profiler/toolbar.html.twig */
+/* WebProfilerBundle:Profiler:toolbar.html.twig */
 class __TwigTemplate_61de8ecf90fffdce78927daab9addbfe15525ab19497cc38bbd756fc491c63e1 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,8 +15,8 @@ class __TwigTemplate_61de8ecf90fffdce78927daab9addbfe15525ab19497cc38bbd756fc491
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ae10c0924f3b40b68ecb7709d36da0a6bf9a2446321a078778157004224dbecc = $this->env->getExtension("native_profiler");
-        $__internal_ae10c0924f3b40b68ecb7709d36da0a6bf9a2446321a078778157004224dbecc->enter($__internal_ae10c0924f3b40b68ecb7709d36da0a6bf9a2446321a078778157004224dbecc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.html.twig"));
+        $__internal_99d33526b4a6be0d68a446f2bc4831d28425bb840896393c1fffdc83b93acb17 = $this->env->getExtension("native_profiler");
+        $__internal_99d33526b4a6be0d68a446f2bc4831d28425bb840896393c1fffdc83b93acb17->enter($__internal_99d33526b4a6be0d68a446f2bc4831d28425bb840896393c1fffdc83b93acb17_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:toolbar.html.twig"));
 
         // line 1
         echo "<!-- START of Symfony Web Debug Toolbar -->
@@ -59,7 +59,7 @@ class __TwigTemplate_61de8ecf90fffdce78927daab9addbfe15525ab19497cc38bbd756fc491
     <style>
         ";
             // line 22
-            $this->loadTemplate("@WebProfiler/Profiler/toolbar.css.twig", "@WebProfiler/Profiler/toolbar.html.twig", 22)->display(array_merge($context, array("position" => (isset($context["position"]) ? $context["position"] : $this->getContext($context, "position")), "floatable" => true)));
+            $this->loadTemplate("@WebProfiler/Profiler/toolbar.css.twig", "WebProfilerBundle:Profiler:toolbar.html.twig", 22)->display(array_merge($context, array("position" => (isset($context["position"]) ? $context["position"] : $this->getContext($context, "position")), "floatable" => true)));
             // line 23
             echo "    </style>
     <div id=\"sfToolbarClearer-";
@@ -116,13 +116,13 @@ $context["name"])), "method"), "html", null, true);
 <!-- END of Symfony Web Debug Toolbar -->
 ";
         
-        $__internal_ae10c0924f3b40b68ecb7709d36da0a6bf9a2446321a078778157004224dbecc->leave($__internal_ae10c0924f3b40b68ecb7709d36da0a6bf9a2446321a078778157004224dbecc_prof);
+        $__internal_99d33526b4a6be0d68a446f2bc4831d28425bb840896393c1fffdc83b93acb17->leave($__internal_99d33526b4a6be0d68a446f2bc4831d28425bb840896393c1fffdc83b93acb17_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "@WebProfiler/Profiler/toolbar.html.twig";
+        return "WebProfilerBundle:Profiler:toolbar.html.twig";
     }
 
     public function isTraitable()

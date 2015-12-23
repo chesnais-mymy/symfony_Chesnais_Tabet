@@ -1,6 +1,6 @@
 <?php
 
-/* @WebProfiler/Profiler/toolbar.css.twig */
+/* WebProfilerBundle:Profiler:toolbar.css.twig */
 class __TwigTemplate_59d13a8f17a784bcfa8370ee3a335bcee505df569bef7d6454f5687c81175267 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,8 +15,8 @@ class __TwigTemplate_59d13a8f17a784bcfa8370ee3a335bcee505df569bef7d6454f5687c811
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_926dc54bdfc8a4dd2a5959e3fc96c0d3b59998a61c3213de730904c47ace7759 = $this->env->getExtension("native_profiler");
-        $__internal_926dc54bdfc8a4dd2a5959e3fc96c0d3b59998a61c3213de730904c47ace7759->enter($__internal_926dc54bdfc8a4dd2a5959e3fc96c0d3b59998a61c3213de730904c47ace7759_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.css.twig"));
+        $__internal_793dc8d1ae3e0547f246d8b68e649bfaa1a1e82f7c6a016b4b433977d9b1dad4 = $this->env->getExtension("native_profiler");
+        $__internal_793dc8d1ae3e0547f246d8b68e649bfaa1a1e82f7c6a016b4b433977d9b1dad4->enter($__internal_793dc8d1ae3e0547f246d8b68e649bfaa1a1e82f7c6a016b4b433977d9b1dad4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:toolbar.css.twig"));
 
         // line 1
         echo ".sf-minitoolbar {
@@ -475,13 +475,13 @@ class __TwigTemplate_59d13a8f17a784bcfa8370ee3a335bcee505df569bef7d6454f5687c811
 }
 ";
         
-        $__internal_926dc54bdfc8a4dd2a5959e3fc96c0d3b59998a61c3213de730904c47ace7759->leave($__internal_926dc54bdfc8a4dd2a5959e3fc96c0d3b59998a61c3213de730904c47ace7759_prof);
+        $__internal_793dc8d1ae3e0547f246d8b68e649bfaa1a1e82f7c6a016b4b433977d9b1dad4->leave($__internal_793dc8d1ae3e0547f246d8b68e649bfaa1a1e82f7c6a016b4b433977d9b1dad4_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "@WebProfiler/Profiler/toolbar.css.twig";
+        return "WebProfilerBundle:Profiler:toolbar.css.twig";
     }
 
     public function isTraitable()

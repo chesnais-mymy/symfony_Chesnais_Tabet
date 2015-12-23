@@ -1,6 +1,6 @@
 <?php
 
-/* @WebProfiler/Collector/request.html.twig */
+/* WebProfilerBundle:Collector:request.html.twig */
 class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312ba153 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("@WebProfiler/Profiler/layout.html.twig", "@WebProfiler/Collector/request.html.twig", 1);
+        $this->parent = $this->loadTemplate("@WebProfiler/Profiler/layout.html.twig", "WebProfilerBundle:Collector:request.html.twig", 1);
         $this->blocks = array(
             'toolbar' => array($this, 'block_toolbar'),
             'menu' => array($this, 'block_menu'),
@@ -23,20 +23,20 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f8210ff2f41c350e0e30932b717a49fe6735b42b04ce621a7db5ee39062c2fc3 = $this->env->getExtension("native_profiler");
-        $__internal_f8210ff2f41c350e0e30932b717a49fe6735b42b04ce621a7db5ee39062c2fc3->enter($__internal_f8210ff2f41c350e0e30932b717a49fe6735b42b04ce621a7db5ee39062c2fc3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Collector/request.html.twig"));
+        $__internal_ecb9f5e5a72b67357ec6fb37e437373e127424b1ea636a54b24d314131862e7a = $this->env->getExtension("native_profiler");
+        $__internal_ecb9f5e5a72b67357ec6fb37e437373e127424b1ea636a54b24d314131862e7a->enter($__internal_ecb9f5e5a72b67357ec6fb37e437373e127424b1ea636a54b24d314131862e7a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Collector:request.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f8210ff2f41c350e0e30932b717a49fe6735b42b04ce621a7db5ee39062c2fc3->leave($__internal_f8210ff2f41c350e0e30932b717a49fe6735b42b04ce621a7db5ee39062c2fc3_prof);
+        $__internal_ecb9f5e5a72b67357ec6fb37e437373e127424b1ea636a54b24d314131862e7a->leave($__internal_ecb9f5e5a72b67357ec6fb37e437373e127424b1ea636a54b24d314131862e7a_prof);
 
     }
 
     // line 3
     public function block_toolbar($context, array $blocks = array())
     {
-        $__internal_fde9aa0aebdb339898cdd9ebcbe1c15df9a1e82ab206159d5efea896189bd037 = $this->env->getExtension("native_profiler");
-        $__internal_fde9aa0aebdb339898cdd9ebcbe1c15df9a1e82ab206159d5efea896189bd037->enter($__internal_fde9aa0aebdb339898cdd9ebcbe1c15df9a1e82ab206159d5efea896189bd037_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "toolbar"));
+        $__internal_56f96451926ca1004ee90c91dddee2e3c043b1802ad8f08b40714bd0c6f159a6 = $this->env->getExtension("native_profiler");
+        $__internal_56f96451926ca1004ee90c91dddee2e3c043b1802ad8f08b40714bd0c6f159a6->enter($__internal_56f96451926ca1004ee90c91dddee2e3c043b1802ad8f08b40714bd0c6f159a6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "toolbar"));
 
         // line 4
         echo "    ";
@@ -172,17 +172,17 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
         $context["text"] = ('' === $tmp = ob_get_clean()) ? '' : new Twig_Markup($tmp, $this->env->getCharset());
         // line 47
         echo "    ";
-        $this->loadTemplate("@WebProfiler/Profiler/toolbar_item.html.twig", "@WebProfiler/Collector/request.html.twig", 47)->display(array_merge($context, array("link" => (isset($context["profiler_url"]) ? $context["profiler_url"] : $this->getContext($context, "profiler_url")))));
+        $this->loadTemplate("@WebProfiler/Profiler/toolbar_item.html.twig", "WebProfilerBundle:Collector:request.html.twig", 47)->display(array_merge($context, array("link" => (isset($context["profiler_url"]) ? $context["profiler_url"] : $this->getContext($context, "profiler_url")))));
         
-        $__internal_fde9aa0aebdb339898cdd9ebcbe1c15df9a1e82ab206159d5efea896189bd037->leave($__internal_fde9aa0aebdb339898cdd9ebcbe1c15df9a1e82ab206159d5efea896189bd037_prof);
+        $__internal_56f96451926ca1004ee90c91dddee2e3c043b1802ad8f08b40714bd0c6f159a6->leave($__internal_56f96451926ca1004ee90c91dddee2e3c043b1802ad8f08b40714bd0c6f159a6_prof);
 
     }
 
     // line 50
     public function block_menu($context, array $blocks = array())
     {
-        $__internal_93af468652d5a6563b441ef0ae02a31acdb9b9c93fd2ceecdbfc8a11368c5f19 = $this->env->getExtension("native_profiler");
-        $__internal_93af468652d5a6563b441ef0ae02a31acdb9b9c93fd2ceecdbfc8a11368c5f19->enter($__internal_93af468652d5a6563b441ef0ae02a31acdb9b9c93fd2ceecdbfc8a11368c5f19_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
+        $__internal_017a3a7057c2806ceb57ce2eab52b118c66473230b559c16366447c3d53383ee = $this->env->getExtension("native_profiler");
+        $__internal_017a3a7057c2806ceb57ce2eab52b118c66473230b559c16366447c3d53383ee->enter($__internal_017a3a7057c2806ceb57ce2eab52b118c66473230b559c16366447c3d53383ee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
 
         // line 51
         echo "<span class=\"label\">
@@ -191,15 +191,15 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
 </span>
 ";
         
-        $__internal_93af468652d5a6563b441ef0ae02a31acdb9b9c93fd2ceecdbfc8a11368c5f19->leave($__internal_93af468652d5a6563b441ef0ae02a31acdb9b9c93fd2ceecdbfc8a11368c5f19_prof);
+        $__internal_017a3a7057c2806ceb57ce2eab52b118c66473230b559c16366447c3d53383ee->leave($__internal_017a3a7057c2806ceb57ce2eab52b118c66473230b559c16366447c3d53383ee_prof);
 
     }
 
     // line 57
     public function block_panel($context, array $blocks = array())
     {
-        $__internal_775ea3c18be6515dc7f30992016794392d83d78ebce5546479140784219e0ae2 = $this->env->getExtension("native_profiler");
-        $__internal_775ea3c18be6515dc7f30992016794392d83d78ebce5546479140784219e0ae2->enter($__internal_775ea3c18be6515dc7f30992016794392d83d78ebce5546479140784219e0ae2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "panel"));
+        $__internal_665dda28fc7d1ee4d0bc83eb35bd2b6726a0a0d6728f4f32dce38a385cdecb3a = $this->env->getExtension("native_profiler");
+        $__internal_665dda28fc7d1ee4d0bc83eb35bd2b6726a0a0d6728f4f32dce38a385cdecb3a->enter($__internal_665dda28fc7d1ee4d0bc83eb35bd2b6726a0a0d6728f4f32dce38a385cdecb3a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "panel"));
 
         // line 58
         echo "    <h2>Request GET Parameters</h2>
@@ -209,7 +209,7 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
         if (twig_length_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestquery", array()), "all", array()))) {
             // line 61
             echo "        ";
-            $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "@WebProfiler/Collector/request.html.twig", 61)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestquery", array())));
+            $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "WebProfilerBundle:Collector:request.html.twig", 61)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestquery", array())));
             // line 62
             echo "    ";
         } else {
@@ -228,7 +228,7 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
         if (twig_length_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestrequest", array()), "all", array()))) {
             // line 71
             echo "        ";
-            $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "@WebProfiler/Collector/request.html.twig", 71)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestrequest", array())));
+            $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "WebProfilerBundle:Collector:request.html.twig", 71)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestrequest", array())));
             // line 72
             echo "    ";
         } else {
@@ -247,7 +247,7 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
         if (twig_length_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestattributes", array()), "all", array()))) {
             // line 81
             echo "        ";
-            $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "@WebProfiler/Collector/request.html.twig", 81)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestattributes", array())));
+            $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "WebProfilerBundle:Collector:request.html.twig", 81)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestattributes", array())));
             // line 82
             echo "    ";
         } else {
@@ -266,7 +266,7 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
         if (twig_length_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestcookies", array()), "all", array()))) {
             // line 91
             echo "        ";
-            $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "@WebProfiler/Collector/request.html.twig", 91)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestcookies", array())));
+            $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "WebProfilerBundle:Collector:request.html.twig", 91)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestcookies", array())));
             // line 92
             echo "    ";
         } else {
@@ -282,7 +282,7 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
 
     ";
         // line 100
-        $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "@WebProfiler/Collector/request.html.twig", 100)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestheaders", array())));
+        $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "WebProfilerBundle:Collector:request.html.twig", 100)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestheaders", array())));
         // line 101
         echo "
     <h2>Request Content</h2>
@@ -311,14 +311,14 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
 
     ";
         // line 114
-        $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "@WebProfiler/Collector/request.html.twig", 114)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestserver", array())));
+        $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "WebProfilerBundle:Collector:request.html.twig", 114)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "requestserver", array())));
         // line 115
         echo "
     <h2>Response Headers</h2>
 
     ";
         // line 118
-        $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "@WebProfiler/Collector/request.html.twig", 118)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "responseheaders", array())));
+        $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "WebProfilerBundle:Collector:request.html.twig", 118)->display(array("bag" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "responseheaders", array())));
         // line 119
         echo "
     <h2>Session Metadata</h2>
@@ -328,7 +328,7 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
         if (twig_length_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "sessionmetadata", array()))) {
             // line 123
             echo "    ";
-            $this->loadTemplate("@WebProfiler/Profiler/table.html.twig", "@WebProfiler/Collector/request.html.twig", 123)->display(array("data" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "sessionmetadata", array())));
+            $this->loadTemplate("@WebProfiler/Profiler/table.html.twig", "WebProfilerBundle:Collector:request.html.twig", 123)->display(array("data" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "sessionmetadata", array())));
             // line 124
             echo "    ";
         } else {
@@ -347,7 +347,7 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
         if (twig_length_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "sessionattributes", array()))) {
             // line 133
             echo "        ";
-            $this->loadTemplate("@WebProfiler/Profiler/table.html.twig", "@WebProfiler/Collector/request.html.twig", 133)->display(array("data" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "sessionattributes", array())));
+            $this->loadTemplate("@WebProfiler/Profiler/table.html.twig", "WebProfilerBundle:Collector:request.html.twig", 133)->display(array("data" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "sessionattributes", array())));
             // line 134
             echo "    ";
         } else {
@@ -366,7 +366,7 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
         if (twig_length_filter($this->env, $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "flashes", array()))) {
             // line 143
             echo "        ";
-            $this->loadTemplate("@WebProfiler/Profiler/table.html.twig", "@WebProfiler/Collector/request.html.twig", 143)->display(array("data" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "flashes", array())));
+            $this->loadTemplate("@WebProfiler/Profiler/table.html.twig", "WebProfilerBundle:Collector:request.html.twig", 143)->display(array("data" => $this->getAttribute((isset($context["collector"]) ? $context["collector"] : $this->getContext($context, "collector")), "flashes", array())));
             // line 144
             echo "    ";
         } else {
@@ -390,7 +390,7 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
 
         ";
             // line 153
-            $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "@WebProfiler/Collector/request.html.twig", 153)->display(array("bag" => $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["profile"]) ? $context["profile"] : $this->getContext($context, "profile")), "parent", array()), "getcollector", array(0 => "request"), "method"), "requestattributes", array())));
+            $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "WebProfilerBundle:Collector:request.html.twig", 153)->display(array("bag" => $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["profile"]) ? $context["profile"] : $this->getContext($context, "profile")), "parent", array()), "getcollector", array(0 => "request"), "method"), "requestattributes", array())));
             // line 154
             echo "    ";
         }
@@ -415,7 +415,7 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
                 echo "</a></h3>
             ";
                 // line 161
-                $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "@WebProfiler/Collector/request.html.twig", 161)->display(array("bag" => $this->getAttribute($this->getAttribute($context["child"], "getcollector", array(0 => "request"), "method"), "requestattributes", array())));
+                $this->loadTemplate("@WebProfiler/Profiler/bag.html.twig", "WebProfilerBundle:Collector:request.html.twig", 161)->display(array("bag" => $this->getAttribute($this->getAttribute($context["child"], "getcollector", array(0 => "request"), "method"), "requestattributes", array())));
                 // line 162
                 echo "        ";
             }
@@ -429,13 +429,13 @@ class __TwigTemplate_348f27719d615a1882c09edba80b4d6c928c1613b0a388b952fa9575312
         echo "
 ";
         
-        $__internal_775ea3c18be6515dc7f30992016794392d83d78ebce5546479140784219e0ae2->leave($__internal_775ea3c18be6515dc7f30992016794392d83d78ebce5546479140784219e0ae2_prof);
+        $__internal_665dda28fc7d1ee4d0bc83eb35bd2b6726a0a0d6728f4f32dce38a385cdecb3a->leave($__internal_665dda28fc7d1ee4d0bc83eb35bd2b6726a0a0d6728f4f32dce38a385cdecb3a_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "@WebProfiler/Collector/request.html.twig";
+        return "WebProfilerBundle:Collector:request.html.twig";
     }
 
     public function isTraitable()
