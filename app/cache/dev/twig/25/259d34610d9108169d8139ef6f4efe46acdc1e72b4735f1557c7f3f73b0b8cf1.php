@@ -15,8 +15,8 @@ class __TwigTemplate_71dffb49f050a766661f41cb23beb85008db5b6cfeea6f55d9a9debf2d4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9a2c76bb8b8f1296206b09751c5fb6c65f5ff5faf70026e77a1c5153fff6b0ec = $this->env->getExtension("native_profiler");
-        $__internal_9a2c76bb8b8f1296206b09751c5fb6c65f5ff5faf70026e77a1c5153fff6b0ec->enter($__internal_9a2c76bb8b8f1296206b09751c5fb6c65f5ff5faf70026e77a1c5153fff6b0ec_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:search.html.twig"));
+        $__internal_c5c077425b1c333d918cffdc4d0fb1245e328abc70b7279a863740d2cd9c6586 = $this->env->getExtension("native_profiler");
+        $__internal_c5c077425b1c333d918cffdc4d0fb1245e328abc70b7279a863740d2cd9c6586->enter($__internal_c5c077425b1c333d918cffdc4d0fb1245e328abc70b7279a863740d2cd9c6586_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:search.html.twig"));
 
         // line 1
         echo "<div class=\"search clearfix\" id=\"searchBar\">
@@ -116,7 +116,7 @@ class __TwigTemplate_71dffb49f050a766661f41cb23beb85008db5b6cfeea6f55d9a9debf2d4
 </div>
 ";
         
-        $__internal_9a2c76bb8b8f1296206b09751c5fb6c65f5ff5faf70026e77a1c5153fff6b0ec->leave($__internal_9a2c76bb8b8f1296206b09751c5fb6c65f5ff5faf70026e77a1c5153fff6b0ec_prof);
+        $__internal_c5c077425b1c333d918cffdc4d0fb1245e328abc70b7279a863740d2cd9c6586->leave($__internal_c5c077425b1c333d918cffdc4d0fb1245e328abc70b7279a863740d2cd9c6586_prof);
 
     }
 
