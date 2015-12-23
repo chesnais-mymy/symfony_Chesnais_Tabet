@@ -12,3 +12,9 @@ b2bcb9,127.0.0.1,GET,http://localhost:8000/,1450885926,,404
 cf5141,127.0.0.1,GET,http://localhost:8000/,1450885934,,404
 fd0e41,127.0.0.1,GET,http://localhost:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450885940,0974d9,200
 0974d9,127.0.0.1,GET,http://localhost:8000/1,1450885940,,200
+32c112,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450886132,de6305,200
+de6305,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450886132,,404
+b7176f,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450886136,3a9641,200
+3a9641,127.0.0.1,GET,http://127.0.0.1:8000/1,1450886136,,200
+022889,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450886153,1424e7,200
+1424e7,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450886153,,200
