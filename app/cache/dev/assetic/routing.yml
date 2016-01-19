@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: /Users/mimi/symfony_Chesnais_Tabet/app/config/routing_dev.yml
+    resource: /Users/Dadoo/Desktop/symfony_Chesnais_Tabet/app/config/routing_dev.yml

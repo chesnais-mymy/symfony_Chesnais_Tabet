@@ -32,3 +32,7 @@ e89f9c,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_loc
 788911,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450888281,,500
 8582a1,127.0.0.1,GET,http://127.0.0.1:8000/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DEsieaBlogBundle%253AAdvert%253Amenu,1450889954,d317b4,200
 d317b4,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1450889954,,200
+8731a2,127.0.0.1,GET,http://127.0.0.1:8000/,1451005313,,200
+8bfed2,127.0.0.1,GET,http://127.0.0.1:8000/,1451005314,,200
+8c4114,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1451005320,39f518,200
+39f518,127.0.0.1,GET,http://127.0.0.1:8000/Blog_Cuisine,1451005320,,500
